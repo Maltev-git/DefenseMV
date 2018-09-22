@@ -1,1 +1,74 @@
- 
+
+\input{style/short_commands_malte}
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Copenhagen}
+\usecolortheme{beaver}
+
+
+\title[title in foot]{Defense}
+\subtitle{Evidence from Space}
+\author[author in foot]{Malte Venzmer}
+\institute[University...]{
+	Institute for Astrophysics\\
+	Georg-August Universität Göttingen
+}
+% \date{\today}
+\date[KPT 2004]{Defense, \today}
+\subject{subject: solar wind}
+
+
+\begin{document}
+
+\frame{\titlepage}
+\frame{\tableofcontents[currentsection]}
+
+\section{Abschnitt 1}
+
+\begin{frame}
+	\frametitle{first slide}
+	\framesubtitle{A bit more information about this}
+	\begin{definition}
+		A definition
+	\end{definition}
+	\url{https://www.sharelatex.com/learn/latex/Beamer}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ein Demotitel}
+	\begin{itemize}
+		\item<1-> dasgfs
+		\item<2> asgag
+		\item<3-> asgag
+		\item<4-> asgag
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle<presentation>{Further Reading}
+	\begin{thebibliography}{10}
+	
+		\beamertemplatebookbibitems
+		
+		\beamertemplatearticlebibitems
+		
+		\bibitem[{{Parker}(1958)}]{Parker1958}
+			{Parker}, E.~N. 1958, \emph{{Dynamics of the Interplanetary Gas and Magnetic Fields.}}, \apj, 128, 664, \href{http://dx.doi.org/10.1086/146579}{[DOI]}, \href{http://adsabs.harvard.edu/abs/1958ApJ...128..664P}{[ADS]}.
+			
+		\bibitem[{{Venzmer} \& {Bothmer}(2018)}]{Venzmer2018}
+			{Venzmer}, M.~S. \& {Bothmer}, V. 2018, \emph{{Solar-wind predictions for the
+			Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical
+			solar-wind model based on Helios and OMNI observations}}, \aap, 611, A36,
+			\href{http://dx.doi.org/10.1051/0004-6361/201731831}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2018A\%26A...611A..36V}{[ADS]}.
+
+	\end{thebibliography}
+\end{frame}
+
+
+
+\end{document}
+
+
