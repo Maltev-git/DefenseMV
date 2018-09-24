@@ -1,40 +1,53 @@
 
 \input{style/short_commands_malte}
 
-\documentclass{beamer}
+\documentclass[11pt]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
 \usepackage[utf8]{inputenc}
 
-\usetheme{Copenhagen}
+\usetheme{Berlin}
 \usecolortheme{beaver}
+\setbeamercolor{title}{fg=blue}
 
+\usepackage{natbib}	%defines citation style
+% \citestyle{aa}
+% \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}{\quad\hfill\insertframenumber\strut\quad\quad}
 
+% title slide
 \title[title in foot]{Defense}
 \subtitle{Evidence from Space}
-\author[author in foot]{Malte Venzmer}
-\institute[University...]{
+\author[MV]{Malte Venzmer}
+\institute[IAG]{
 	Institute for Astrophysics\\
 	Georg-August Universität Göttingen
 }
 % \date{\today}
 \date[KPT 2004]{Defense, \today}
 \subject{subject: solar wind}
+% \logo{\includegraphics[height=1cm]{images/IAG_LogoRGB.png}}
 
 
 \begin{document}
 
 \frame{\titlepage}
-\frame{\tableofcontents[currentsection]}
+
+\AtBeginSection[]{
+	\frame{\tableofcontents[currentsection]}
+}
 
 \section{Abschnitt 1}
 
 \begin{frame}
 	\frametitle{first slide}
 	\framesubtitle{A bit more information about this}
+	This is a text in first frame. \pause This is a text in first frame. This is a text in first frame.
 	\begin{definition}
 		A definition
 	\end{definition}
 	\url{https://www.sharelatex.com/learn/latex/Beamer}
 \end{frame}
+
+\section{Section 2}
 
 \begin{frame}
 	\frametitle{Ein Demotitel}
@@ -42,8 +55,49 @@
 		\item<1-> dasgfs
 		\item<2> asgag
 		\item<3-> asgag
-		\item<4-> asgag
+		\item<3-> asgag
 	\end{itemize}
+\end{frame}
+
+\section{part two}
+
+\begin{frame}
+	\frametitle{Sample frame title}
+	
+	In this slide, some important text will be
+	\alert{highlighted} beause it's important.
+	Please, don't abuse it.
+	
+	\begin{block}{Remark}
+	Sample text
+	\end{block}
+	
+	\begin{alertblock}{Important theorem}
+	Sample text in red box
+	\end{alertblock}
+	
+	\begin{examples}
+	Sample text in green box. "Examples" is fixed as block title.
+	\end{examples}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Two-column slide}
+	\begin{columns}[t]
+	
+	\column{0.5\textwidth}
+	This is a text in first column.
+	$$E=mc^2$$
+	\begin{itemize}
+	\item First item
+	\item Second item
+	\end{itemize}
+	
+	\column{0.5\textwidth}
+	This text will be in the second column
+	and on a second tought this is a nice looking
+	layout in some cases \citep{Venzmer2018}.
+	\end{columns}
 \end{frame}
 
 \begin{frame}[allowframebreaks]
