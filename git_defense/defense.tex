@@ -4,14 +4,18 @@
 \documentclass[11pt]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
 \usepackage[utf8]{inputenc}
 
-\usetheme{Berlin}
+\usetheme{Darmstadt}
 \usecolortheme{beaver}
 \setbeamercolor{title}{fg=blue}
 
+
+% \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
+\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol}
+
 \usepackage{natbib}	%defines citation style
 % \citestyle{aa}
-% \setbeamertemplate{footline}[frame number]
-\setbeamertemplate{footline}{\quad\hfill\insertframenumber\strut\quad\quad}
+
 
 % title slide
 \title[title in foot]{Defense}
@@ -32,14 +36,13 @@
 \frame{\titlepage}
 
 \AtBeginSection[]{
+	\subsection{}	% for making the nav dots appear
 	\frame{\tableofcontents[currentsection]}
 }
 
 \section{Abschnitt 1}
 
-\begin{frame}
-	\frametitle{first slide}
-	\framesubtitle{A bit more information about this}
+\begin{frame}[c]{first slide}{A bit more information about this}
 	This is a text in first frame. \pause This is a text in first frame. This is a text in first frame.
 	\begin{definition}
 		A definition
@@ -49,20 +52,62 @@
 
 \section{Section 2}
 
-\begin{frame}
-	\frametitle{Ein Demotitel}
+\begin{frame}[<+->]{Ein Demotitel}{}
 	\begin{itemize}
 		\item<1-> dasgfs
 		\item<2> asgag
 		\item<3-> asgag
-		\item<3-> asgag
+		\item asgag
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[<+->]{Ein Demotitel}{}
+	\begin{itemize}
+		\item dasgfs
+		\item asgag
+		\item asgag
+		\item<.-> asgag
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Ein Demotitel}{}
+	\begin{itemize}
+		\item<+-> dasgfs
+		\item<+-> asgag
+		\item<+-> asgag
+		\item<+-> asgag
 	\end{itemize}
 \end{frame}
 
 \section{part two}
 
-\begin{frame}
-	\frametitle{Sample frame title}
+\begin{frame}[t]{Sample frame title}{}
+	
+	In this slide, some important text will be
+	\alert<2->{highlighted} beause it's important.
+	Please, don't abuse it.
+	
+	\onslide<2>{	%\uncover{}
+	\begin{block}{Remark}
+	Sample text
+	\end{block}
+	}
+	
+	\onslide*<1>{	%\only{}
+	\begin{examples}
+	Sample text in green box. "Examples" is fixed as block title.
+	\end{examples}
+	}
+	
+	\onslide+<2>{	%\visible{}
+	\begin{alertblock}{Important theorem}
+	Sample text in red box
+	\end{alertblock}
+	}
+	
+\end{frame}
+
+\begin{frame}[plain]{Sample frame title}{}
 	
 	In this slide, some important text will be
 	\alert{highlighted} beause it's important.
@@ -81,27 +126,46 @@
 	\end{examples}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Two-column slide}
+\section{part 3}
+
+\begin{frame}{Two-column slide}{}
 	\begin{columns}[t]
-	
-	\column{0.5\textwidth}
-	This is a text in first column.
-	$$E=mc^2$$
-	\begin{itemize}
-	\item First item
-	\item Second item
-	\end{itemize}
-	
-	\column{0.5\textwidth}
-	This text will be in the second column
-	and on a second tought this is a nice looking
-	layout in some cases \citep{Venzmer2018}.
+		\column{0.5\textwidth}
+		This is a text in first column.
+		$$E=mc^2$$
+		\begin{itemize}
+		\item First item
+		\item Second item
+		\end{itemize}
+		
+		\column{0.5\textwidth}
+		This text will be in the second column
+		and on a second tought this is a nice looking
+		layout in some cases \citep{Venzmer2018}.
 	\end{columns}
 \end{frame}
 
-\begin{frame}[allowframebreaks]
-	\frametitle<presentation>{Further Reading}
+\begin{frame}[t]{Sample}{}
+	
+	In this slide, some important text will be
+	\alert<2->{highlighted} beause it's important.
+	Please, don't abuse it.
+	
+	\begin{block}<1->{Remark}
+	Sample text
+	\end{block}
+	
+	\begin{examples}<2>
+	Sample text in green box. "Examples" is fixed as block title.
+	\end{examples}
+	
+	\begin{alertblock}<3>{Important theorem}
+	Sample text in red box
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Further Reading}
 	\begin{thebibliography}{10}
 	
 		\beamertemplatebookbibitems
@@ -121,6 +185,23 @@
 	\end{thebibliography}
 \end{frame}
 
+\appendix
+
+\section{Backup slides}
+
+\begin{frame}{backup slide}{}
+	gj
+\end{frame}
+
+\section{Backup slides 2}
+
+\begin{frame}{backup slide}{}
+	gj
+\end{frame}
+
+% \begin{frame}[]{title}{subtitle}
+% 
+% \end{frame}
 
 
 \end{document}
