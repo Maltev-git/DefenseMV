@@ -1,0 +1,72 @@
+
+Thank you for the introduction...
+
+Welcome to my defense! I am happy that you all came, in particular to see so many familiar faces. I probably share my nervousness with my family and some of my close friends ;)
+
+Today I will present to you the studies I performed for my thesis and then defend my thesis against critical questions.
+
+%%% two topics
+% "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
+You can already see from the title of my thesis that it consists of two major parts.
+
+The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models for estimating the magnitude of geomagnetic disturbances that are evoked by solar wind and coronal mass ejections.
+
+The second part develops a solar wind model for the inner heliosphere. This study also predicts the near-Sun solar wind which the Parker Solar Probe spacecraft will fly into.
+
+
+In this talk, I will briefly present both parts and describe the studies I performed. However, there are only 30 Minutes, so I will only describe the methods and results of one study in greater detail.
+
+That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft.
+
+I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
+
+Solar wind
+- solar activity cycle (sunspots)
+- solar magnetic field (near-Sun field geometry, Parker spiral)
+- slow/fast wind
+- CMEs
+
+first study
+- magnetosphere
+- coupling mechanisms
+- geomagnetic storms
+questions: coupling processes
+current problems: space weather prediction
+aims: estimating geomagnetic disturbances for specific forecast situations
+methods: correlating near-Earth solar wind measurements with the geomagnetic disturbance indicator Kp; deriving dependencies for solar wind and CMEs; evaluating prediction performance
+results: relations that predict the impacts from solar wind and CMEs; 3-hour extrema correlate better than 3-hour averages in case of electric field coupling function
+conclusions: data resolution and processing method are important (short-term magnetic structures have a significant influence on the Kp index); the relations perform inferior to prediction methods based on full-fledged coupling functions or artificial neural networks, however, for their limited input information they provide decent results
+
+second study
+questions: coronal heating and sw acceleration
+current problems: PSP mission
+aims: building an empirical solar wind model for the inner heliosphere and predicting the near-Sun solar wind properties PSP will encounter during its mission
+methods: 
+results: 
+conclusions: 
+
+
+
+
+
+
+Thank you!
+
+
+
+
+
+
+
+
+
+why estimating the solar wind there now when the probe will measure it anyway soon?
+
+what is this study good for? (in general, in terms of WISPR, in terms of PSP?)
+
+why the use of probability distributions instead of averages?
+-> because this also provides the estimation for the possible extreme values
+
+why the focus exactly on these four solar wind parameters?
+-> because many properties can be derived from these key parameters: beta, pressure, see paper...
+
