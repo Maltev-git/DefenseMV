@@ -9,7 +9,7 @@ Today I will present to you the studies I performed for my thesis and after that
 
 %%% two topics
 % "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
-You can already see from the title of my thesis that it consists of two major parts.
+You can already see from the title of my thesis that it consists of two major parts. The parts are focused on different aspects of the solar wind.
 
 The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models for estimating the magnitude of geomagnetic disturbances that are caused by solar wind and coronal mass ejections.
 
@@ -20,13 +20,14 @@ In this talk, I will briefly present both parts and describe the studies I perfo
 
 I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
 
+%%% solar wind
 Solar wind
 - solar activity cycle (sunspots)
 - solar magnetic field (near-Sun field geometry, Parker spiral)
 - slow/fast wind
 - CMEs
 
-first study
+%%% first study
 - magnetosphere
 - coupling mechanisms
 - geomagnetic storms
@@ -34,16 +35,16 @@ questions: coupling processes
 current problems: prediction of space weather effects
 aims: estimating the size of geomagnetic disturbances for specific forecast situations (CMEs + streams)
 methods: correlating near-Earth solar wind measurements with the geomagnetic disturbance indicator Kp; data sets; processing different data resolutions; deriving dependencies for the solar wind electric field and the velocity of CMEs and streams; evaluation of the prediction performance
-results: relations that predict the size of the Kp impact from the solar wind electric field and from the velocity of CMEs and streams; in case of the electric field coupling function, 3-hour extrema correlate significantly better than 3-hour averages; in case of the velocity the underlying resolution is less important; prediction methods based on full-fledged coupling functions or artificial neural networks perform better than the derived relations
-conclusions: data resolution/processing method are very important for the correlation of the electric field (short-term magnetic structures have a significant influence on the Kp index); the derived relations provide decent results for the limited input information
+results: relations that predict the size of the Kp impact from the solar wind electric field and from the velocity of CMEs and streams; in case of the electric field coupling function, 3-hour extrema correlate significantly better than 3-hour averages; in case of the velocity, the underlying resolution is less important; prediction methods based on full-fledged coupling functions or artificial neural networks perform better than the derived relations
+conclusions: data resolution and processing method are very important for the correlation of the electric field (short-term magnetic structures have a significant influence on the Kp index); the derived relations provide decent results for the limited input information
 outlook:
 
-second study
-questions: coronal heating and sw acceleration
+%%% second study
+questions: coronal heating and solar wind acceleration
 current problems: Parker Solar Probe mission
-aims: building an empirical solar wind model for the inner heliosphere and predicting the near-Sun solar wind properties PSP will encounter during its mission
-methods: 
-results: 
+aims: building an empirical solar wind model for the inner heliosphere and predicting the near-Sun solar wind properties PSP will encounter during its perihelia
+methods: from existing in-situ measurements of the key solar wind parameters magnetic field strength, proton velocity, density, and temperature; shifting and scaling their frequency distributions according to solar activity and solar distance; their 1 au frequency distributions are represented with lognormal functions (two for the velocity); the distributions' shift is correlated with the sunspot number as an indicator for solar activity; power-law relations are obtained from their solar distance dependencies using Helios measurements from the distance range 0.29--0.98 au (considering Parker geometry for the magnetic field); combining both dependencies into one model; prediction for PSP's orbital trajectory, in particular to its first and to its closest perihelia; by extrapolation to near-Sun distances and using SSN predictions for the next solar cycle
+results: relations for key solar wind parameters that depend on the SSN and solar distance, representing the frequency distributions in the inner heliosphere; predictions for PSP's near-Sun solar wind environment; the near-Sun values for velocity and temperature are overestimated compared to remote observations
 conclusions: 
 outlook:
 
@@ -74,4 +75,11 @@ why the use of probability distributions instead of averages?
 
 why the focus exactly on these four solar wind parameters?
 -> because many properties can be derived from these key parameters: beta, pressure, see paper...
+
+VB:
+- how do aurorae form?
+
+H. Peter:
+- why is it so difficult to predict the in-situ magnetic field of CMEs, even if the magnetic configuration of their source region is known?
+
 
