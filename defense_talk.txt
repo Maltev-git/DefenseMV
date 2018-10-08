@@ -1,29 +1,32 @@
 
 ### talk
 
-Thank you for the introduction...
+Thank you for the introduction... (including the defense committee members)
 
 Welcome to my defense! I am happy that you all came, in particular to see so many familiar faces. I probably share my nervousness with my family and some of my close friends ;)
 
-Today I will present to you the studies I performed for my thesis and after that defend my thesis against critical questions.
+First, I thank the six members of my defense committee for kindly agreeing to evaluate my defense performance (name them in case VB forgot).
+
+Today I will present to you the studies I included in my thesis and after that defend my thesis against critical questions.
 
 %%% two topics
 % "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
-You can already see from the title of my thesis that it consists of two major parts. The parts are focused on different aspects of the solar wind.
+You can already see from the title of my thesis that it consists of two major parts. Both parts are focused on different aspects of the solar wind.
 
 The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models for estimating the magnitude of geomagnetic disturbances that are caused by solar wind and coronal mass ejections.
 
 The second part develops a solar wind model for the inner heliosphere. This study also predicts the near-Sun solar wind which the Parker Solar Probe spacecraft is flying into.
 
 
-In this talk, I will briefly present both parts and describe the studies I performed. However, there are only 30 Minutes, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft.
+In this talk, I will briefly present both parts and describe the studies I performed. However, there is only half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft.
 
 I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
 
 %%% solar wind
 Solar wind
-- solar activity cycle (sunspots)
+- history (comets, Parker, satellite measurements)
 - solar magnetic field (near-Sun field geometry, Parker spiral)
+- solar activity cycle (sunspots)
 - slow/fast wind
 - CMEs
 
@@ -40,15 +43,16 @@ conclusions: data resolution and processing method are very important for the co
 outlook:
 
 %%% second study
+article: the major part of this study is published in the article Venzmer & Bothmer (2018) in the journal Astronomy and Astrophysics
 questions: coronal heating and solar wind acceleration
 current problems: Parker Solar Probe mission
 aims: building an empirical solar wind model for the inner heliosphere and predicting the near-Sun solar wind properties PSP will encounter during its perihelia
 methods: from existing in-situ measurements of the key solar wind parameters magnetic field strength, proton velocity, density, and temperature; shifting and scaling their frequency distributions according to solar activity and solar distance; their 1 au frequency distributions are represented with lognormal functions (two for the velocity); the distributions' shift is correlated with the sunspot number as an indicator for solar activity; power-law relations are obtained from their solar distance dependencies using Helios measurements from the distance range 0.29--0.98 au (considering Parker geometry for the magnetic field); combining both dependencies into one model; prediction for PSP's orbital trajectory, in particular to its first and to its closest perihelia; by extrapolation to near-Sun distances and using SSN predictions for the next solar cycle
 results: relations for key solar wind parameters that depend on the SSN and solar distance, representing the frequency distributions in the inner heliosphere; predictions for PSP's near-Sun solar wind environment; the near-Sun values for velocity and temperature are overestimated compared to remote observations
-conclusions: 
+conclusions: the velocity and temperature discrepancies suggest that solar wind heating and acceleration takes place up until 20 Rs
 outlook:
 
-
+%%% summary
 
 
 
@@ -58,10 +62,22 @@ Thank you!
 
 
 ### questions
+
+## general
+
+what else did you do?
+- several precursor studies for both topics (data time resolution, processing method, data set, coupling functions)
+- classification of solar wind structures (CMEs, MCs, HSSs, CIRs, SIRs, HCSs, shocks, compression zones)
+- magnetic cloud modeling (minimum variance analysis, synthetic MC field structure)
+
 ## first
 
 
 ## second
+
+what are the proposed mechanisms for the coronal heating and the solar wind acceleration?
+heating mechanisms:
+acceleration mechanisms:
 
 why estimating the solar wind there now when the PSP will measure it anyway soon?
 
