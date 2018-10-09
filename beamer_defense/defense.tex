@@ -1,21 +1,26 @@
 
 \input{style/short_commands_malte}
 
-\documentclass[11pt]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
+\documentclass[10pt]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
 \usepackage[utf8]{inputenc}
+
+% native slide format 128mm x 96mm
 
 \usetheme{Darmstadt}
 \usecolortheme{beaver}
 \setbeamercolor{title}{fg=blue}
 
-
+% \setbeamertemplate{footline}[page number]
 % \setbeamertemplate{footline}[frame number]
-\setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
-\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol}
+% \setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
+\setbeamertemplate{footline}{\hfill\strut\insertpagenumber\quad\quad}
+\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol\insertframenavigationsymbol\insertbackfindforwardnavigationsymbol}
 
 \usepackage{natbib}	%defines citation style
 % \citestyle{aa}
 
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedleft,font=scriptsize}
 
 % title slide
 \title[title in foot]{Defense}
@@ -163,6 +168,36 @@
 	Sample text in red box
 	\end{alertblock}
 	
+\end{frame}
+
+\begin{frame}[c]{Figure sample}{A}
+% 	\centering
+% 	\flushleft
+	\framebox{\includegraphics[width=\textwidth]{figures/IAG_LogoRGB.png}}
+	\captionof{figure}{Credit: NASA}
+\end{frame}
+
+\begin{frame}[plain,t]{}{2 columns}
+	\begin{columns}[t]	% [tcb] alignment relative to each column size
+	\column{0.45\textwidth}
+	
+		\includegraphics[width=\textwidth]{figures/psp201810_0204.png}
+		\captionof{figure}{Credit: NASA}
+
+		\flushright {\scriptsize Credit: NASA}
+		
+		\hfill {\scriptsize Credit: NASA}
+		
+	\column{0.5\textwidth}
+	
+		\begin{alertblock}{Important theorem}
+			Sample text in red box
+		\end{alertblock}
+
+		some text
+		
+		more text
+	\end{columns}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Further Reading}
