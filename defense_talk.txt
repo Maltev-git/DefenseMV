@@ -22,7 +22,7 @@ The first part deals with the influence of the solar wind on the terrestrial mag
 The second part develops a solar wind model for the inner heliosphere. This study also predicts the near-Sun solar wind which the Parker Solar Probe spacecraft is flying into during its mission.
 
 > contents
-In this talk, I will briefly present both parts and describe the studies I performed. However, there is only half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion in X days on xxday.
+In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion in X days on xxday.
 
 I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
 
