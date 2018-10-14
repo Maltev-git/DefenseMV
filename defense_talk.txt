@@ -1,7 +1,10 @@
-this: 20.5 mins
-abstract: 
-intro:
-conclusions:
+
+### timing
+this: 20:30 mins
+abstract: 11:15
+intro: 21:30
+conclusions 1: 14:26
+conclusions 2: 14:50
 
 ### talk
 > title slide
@@ -13,6 +16,7 @@ First, I thank the six members of my defense committee for kindly agreeing to ev
 
 Today I will present to you the studies I included in my thesis and after that defend my thesis against critical questions.
 
+
 > two topics
 % "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
 You can already see from the title of my thesis that it consists of two major parts. Both parts are focused on different aspects of the solar wind.
@@ -21,10 +25,12 @@ The first part deals with the influence of the solar wind on the terrestrial mag
 
 The second part develops a solar wind model for the inner heliosphere. This study also predicts the near-Sun solar wind which the Parker Solar Probe spacecraft is flying into during its mission.
 
+
 > contents
 In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion in X days on xxday.
 
 I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
+
 
 > solar wind slides
 Solar wind
@@ -33,6 +39,7 @@ Solar wind
 - solar activity cycle (sunspots + Ulysses figure)
 - slow/fast wind (CH image and in-situ plot)
 - CMEs (coronagraph + in-situ plot)
+
 
 > first study slides
 - solar wind interacts with the terrestrial magnetosphere (magnetosphere figure, Davies 1990)
@@ -49,6 +56,7 @@ results: relations that predict the size of the Kp impact from the solar wind el
 conclusions: data resolution and processing method are very important for the correlation of the electric field (short-term magnetic structures have a significant influence on the Kp index); the derived relations provide decent results for the limited input information
 outlook?
 
+
 > second study slides
 - solar wind measured throughout the heliosphere, not near-Sun
 questions: coronal heating and solar wind acceleration
@@ -59,6 +67,7 @@ methods: from existing in-situ measurements of the key solar wind parameters mag
 results: relations for key solar wind parameters that depend on the SSN and solar distance, representing the frequency distributions in the inner heliosphere; predictions for PSP's near-Sun solar wind environment; the near-Sun values for velocity and temperature are overestimated compared to remote observations
 conclusions: the velocity and temperature discrepancies suggest that solar wind heating and acceleration takes place up until 20 Rs
 outlook?
+
 
 > summary
 
