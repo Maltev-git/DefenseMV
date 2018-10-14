@@ -1,0 +1,13 @@
+
+Logitech presenter configuration under Ubuntu 16.04
+
+how to make the 'start/end presentation' and 'toggle black screen' buttons work:
+
+
+https://cinhtau.net/2015/08/07/configure-logitech-wireless-presenter-r400-for-ubuntu-14-04/
+https://askubuntu.com/questions/565555/xubuntu-logitech-presenter-works-only-partialy
+
+read instructions in 60-keyboard.hwdb file!
+
+use vi
+
