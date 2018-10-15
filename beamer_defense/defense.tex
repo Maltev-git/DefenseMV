@@ -1,10 +1,10 @@
 
 \input{style/short_commands_malte}
 
-\documentclass[10pt]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
+\documentclass[11pt,aspectratio=1610]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
 \usepackage[utf8]{inputenc}
-
-% native slide format 128mm x 96mm
+% 16:10 -> 160x100mm
+% 4:3 native slide format 128mm x 96mm
 
 \usetheme{Darmstadt}
 \usecolortheme{beaver}
@@ -13,8 +13,8 @@
 % \setbeamertemplate{footline}[page number]
 % \setbeamertemplate{footline}[frame number]
 % \setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
-\setbeamertemplate{footline}{\hfill\strut\insertpagenumber\quad\quad}
-\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol\insertframenavigationsymbol\insertbackfindforwardnavigationsymbol}
+\setbeamertemplate{footline}{\hfill\strut\footnotesize\insertpagenumber\quad\quad}
+\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol\insertbackfindforwardnavigationsymbol}
 
 \usepackage{natbib}	%defines citation style
 % \citestyle{aa}
@@ -23,29 +23,80 @@
 \captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedleft,font=scriptsize}
 
 % title slide
-\title[title in foot]{Defense}
-\subtitle{Evidence from Space}
-\author[MV]{Malte Venzmer}
+\title[Solar wind]{The solar wind's geomagnetic impact and its Sun–Earth evolution}
+\subtitle{Predictive models for space weather and for the Parker Solar Probe orbit}
+\author[MV]{PhD defense by\\\textit{Malte Venzmer}}
 \institute[IAG]{
-	Institute for Astrophysics\\
-	Georg-August Universität Göttingen
+	\begin{columns}[c]
+	\column{0.1\textwidth}
+	\column{0.4\textwidth}
+
+		PhD student\\
+		within the doctoral program ProPhys,\\
+		Georg-August University School of Science (GAUSS)\\
+		.\\
+		Institute for Astrophysics\\
+		Georg-August Universität Göttingen
+
+	\column{0.1\textwidth}
+	\column{0.4\textwidth}
+
+		\underline{Examination board members}\\
+		Dr. Volker Bothmer (referee)\\
+		Prof. Dr. Ansgar Reiners (2nd referee)\\
+		Prof. Dr. Stefan Dreizler\\
+		Prof. Dr. Wolfram Kollatschny\\
+		Prof. Dr. Hardi Peter\\
+		Prof. Dr. Andreas Tilgner
+	\end{columns}
 }
 % \date{\today}
-\date[KPT 2004]{Defense, \today}
-\subject{subject: solar wind}
-% \logo{\includegraphics[height=1cm]{images/IAG_LogoRGB.png}}
+\date[2018]{\vspace*{0.5cm}\\ Thursday, 1 November 2018, 14:00\\Seminarraum Astrophysik (SR 17, F 05.104)}
+\subject{Solar wind}
+% \logo{\includegraphics[height=1cm]{figures/IAG_LogoRGB.png}}
 
 
 \begin{document}
-
-\frame{\titlepage}
 
 \AtBeginSection[]{
 	\subsection{}	% for making the nav dots appear
 	\frame{\tableofcontents[currentsection]}
 }
 
-\section{Abschnitt 1}
+\frame[plain]{\titlepage}
+
+\begin{frame}[c]{Title}{Two topics}
+	\centering{
+	The solar wind's geomagnetic impact and its Sun–Earth evolution\\
+	--\\
+	Predictive models for space weather and for the Parker Solar Probe orbit
+	}\\
+	
+	\begin{block}<1->{Study 1}
+		The solar wind's geomagnetic impact -- Predictive models for space weather
+	\end{block}
+	\begin{block}<2>{Study 2}
+		The solar wind's Sun–Earth evolution -- Predictive models for the Parker Solar Probe orbit
+	\end{block}
+\end{frame}
+
+\section{Solar wind}
+
+\begin{frame}[c]{Solar wind}{}
+	images...
+\end{frame}
+
+\section{Study 1}
+
+\begin{frame}[c]{Geomagnetic impact of the solar wind}{}
+	images...
+\end{frame}
+
+\section{Study 2}
+
+\begin{frame}[c]{Sun--Earth evolution of the solar wind}{}
+	images...
+\end{frame}
 
 \begin{frame}[c]{first slide}{A bit more information about this}
 	This is a text in first frame. \pause This is a text in first frame. This is a text in first frame.
@@ -54,8 +105,6 @@
 	\end{definition}
 	\url{https://www.sharelatex.com/learn/latex/Beamer}
 \end{frame}
-
-\section{Section 2}
 
 \begin{frame}[<+->]{Ein Demotitel}{}
 	\begin{itemize}
