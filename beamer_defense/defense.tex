@@ -20,7 +20,8 @@
 % \citestyle{aa}
 
 \usepackage{caption}
-\captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedleft,font=scriptsize}
+\captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedright,font=scriptsize}
+\newcommand{\captionoftiny}[2]{\captionof{#1}{\color{gray} \tiny #2}}
 
 % title slide
 \title[Solar wind]{The solar wind's geomagnetic impact and its Sun–Earth evolution}
@@ -83,6 +84,56 @@
 \section{Solar wind}
 
 \begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Tse_2017_mi800.jpg}
+	\captionoftiny{figure}{Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Peter Aniol, Jan Sládeček}, 2008}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_Heliosphere_screenshot.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~9]{Owens2013}}}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/20130529_000119_1024_0193.jpg}
+	\captionoftiny{figure}{Credit: NASA/SDO and the AIA, EVE and HMI science teams}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Cranmer2005_fig1_color.png}
+	\captionoftiny{figure}{Courtesy of S. R. Cranmer}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_CIR_2panel_screenshot.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~7]{Owens2013}}; right panel adapted from {\citet[Fig.~2]{Pizzo1991}}}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
+	\captionoftiny{figure}{Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/McComas2008_Ulysses_orbit_.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{McComas200809}}}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/20000226_lightbulb_CME_c3full.png}
+	\captionoftiny{figure}{\tiny Courtesy of SOHO/LASCO consortium. SOHO is a project of international cooperation between ESA and NASA}
+
+	\column{0.5\textwidth}
+
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Marubashi2007_fig1.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~1, panel (a)]{Marubashi2007}}}
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/enlil_com1_20170906T150000.jpg}
+	\captionoftiny{figure}{Credit: \href{http://dx.doi.org/10.7289/V5445JGH}{SWPC: WSA-Enlil Solar Wind Prediction. NOAA National Centers for Environmental Information}}
+\end{frame}
+
+\begin{frame}[c]{Solar wind}{}
 	images...
 \end{frame}
 
@@ -91,6 +142,27 @@
 \begin{frame}[c]{Geomagnetic impact of the solar wind}{}
 	images...
 \end{frame}
+
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Davies1990_magnetosphere_sharpened.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~2.12]{Davies1990}}}
+\end{frame}
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Kivelson1995_fig9_11_dungey_cycle.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~9.11]{Hughes1995}}}
+\end{frame}
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Kp_map.jpg}
+	\captionoftiny{figure}{Courtesy of \href{http://isgi.unistra.fr/indices_kp.php}{International Service of Geomagnetic Indices (ISGI)}, 2013}
+\end{frame}
+% \begin{frame}[c]{}{}
+% 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/}
+% 	\captionoftiny{figure}{}
+% \end{frame}
+% \begin{frame}[c]{}{}
+% 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/}
+% 	\captionoftiny{figure}{}
+% \end{frame}
 
 \section{Study 2}
 
@@ -222,8 +294,8 @@
 \begin{frame}[c]{Figure sample}{A}
 % 	\centering
 % 	\flushleft
-	\framebox{\includegraphics[width=\textwidth]{figures/IAG_LogoRGB.png}}
-	\captionof{figure}{Credit: NASA}
+	\framebox{\includegraphics[width=0.6\textwidth]{figures/IAG_LogoRGB.png}}
+	\captionoftiny{figure}{Credit: NASA}
 \end{frame}
 
 \begin{frame}[plain,t]{}{2 columns}
@@ -231,7 +303,7 @@
 	\column{0.45\textwidth}
 	
 		\includegraphics[width=\textwidth]{figures/psp201810_0204.png}
-		\captionof{figure}{Credit: NASA}
+		\captionoftiny{figure}{Credit: NASA}
 
 		\flushright {\scriptsize Credit: NASA}
 		
@@ -256,9 +328,62 @@
 		
 		\beamertemplatearticlebibitems
 		
+		\bibitem[{{Cranmer} \& {van Ballegooijen}(2005)}]{Cranmer2005}
+			{Cranmer}, S.~R. \& {van Ballegooijen}, A.~A. 2005, \emph{{On the Generation,
+			Propagation, and Reflection of Alfv{\'e}n Waves from the Solar Photosphere to
+			the Distant Heliosphere}}, \apjs, 156, 265,
+			\href{http://dx.doi.org/10.1086/426507}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2005ApJS..156..265C}{[ADS]}.
+		
+		\bibitem[{Davies(1990)}]{Davies1990}
+			Davies, K. 1990, \emph{Ionospheric Radio} (Institution of Engineering and
+			Technology),
+			\href{http://digital-library.theiet.org/content/books/ew/pbew031e}{[link]},
+			\href{http://dx.doi.org/10.1049/PBEW031E}{[DOI]}.
+		
+		\bibitem[{{Hughes}(1995)}]{Hughes1995}
+			{Hughes}, W.~J. 1995, \emph{{Chapter 9: The magnetopause, magnetotail, and
+			magnetic reconnection}}, ed. M.~Kivelson \& C.~Russell, Introduction to Space
+			Physics (Cambridge University Press, Cambridge), 227--287,
+			\href{http://adsabs.harvard.edu/abs/1995isp..book.....K}{[ADS]}.
+		
+		\bibitem[{{Marubashi} \& {Lepping}(2007)}]{Marubashi2007}
+			{Marubashi}, K. \& {Lepping}, R.~P. 2007, \emph{{Long-duration magnetic clouds:
+			a comparison of analyses using torus- and cylinder-shaped flux rope models}},
+			Annales Geophysicae, 25, 2453,
+			\href{http://dx.doi.org/10.5194/angeo-25-2453-2007}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2007AnGeo..25.2453M}{[ADS]}.
+			
+		\bibitem[{{McComas} {et~al.}(2008{\natexlab{a}}){McComas}, {Ebert}, {Elliott},
+			{Goldstein}, {Gosling}, {Schwadron}, \& {Skoug}}]{McComas200809}
+			{McComas}, D.~J., {Ebert}, R.~W., {Elliott}, H.~A. {et~al.} 2008{\natexlab{a}},
+			\emph{{Weaker solar wind from the polar coronal holes and the whole Sun}},
+			\grl, 35, L18103, \href{http://dx.doi.org/10.1029/2008GL034896}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2008GeoRL..3518103M}{[ADS]}.
+		
+		\bibitem[{{Owens} \& {Forsyth}(2013)}]{Owens2013}
+			{Owens}, M.~J. \& {Forsyth}, R.~J. 2013, \emph{{The Heliospheric Magnetic
+			Field}}, Living Reviews in Solar Physics, 10, 5,
+			\href{http://dx.doi.org/10.12942/lrsp-2013-5}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2013LRSP...10....5O}{[ADS]}.
+		
 		\bibitem[{{Parker}(1958)}]{Parker1958}
 			{Parker}, E.~N. 1958, \emph{{Dynamics of the Interplanetary Gas and Magnetic Fields.}}, \apj, 128, 664, \href{http://dx.doi.org/10.1086/146579}{[DOI]}, \href{http://adsabs.harvard.edu/abs/1958ApJ...128..664P}{[ADS]}.
+
+		\bibitem[{{Pizzo}(1991)}]{Pizzo1991}
+			{Pizzo}, V.~J. 1991, \emph{{The evolution of corotating stream fronts near the
+			ecliptic plane in the inner solar system. II - Three-dimensional
+			tilted-dipole fronts}}, \jgr, 96, 5405,
+			\href{http://dx.doi.org/10.1029/91JA00155}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/1991JGR....96.5405P}{[ADS]}.
 			
+		\bibitem[{{Schatten} {et~al.}(1969){Schatten}, {Wilcox}, \&
+			{Ness}}]{Schatten1969}
+			{Schatten}, K.~H., {Wilcox}, J.~M. \& {Ness}, N.~F. 1969, \emph{{A model of
+			interplanetary and coronal magnetic fields}}, \solphys, 6, 442,
+			\href{http://dx.doi.org/10.1007/BF00146478}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/1969SoPh....6..442S}{[ADS]}.
+
 		\bibitem[{{Venzmer} \& {Bothmer}(2018)}]{Venzmer2018}
 			{Venzmer}, M.~S. \& {Bothmer}, V. 2018, \emph{{Solar-wind predictions for the
 			Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical

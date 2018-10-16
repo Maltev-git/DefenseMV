@@ -35,16 +35,16 @@ order=-1
 
 [item:defense.tex]
 archive=true
-column=8
+column=59
 encoding=UTF-8
 highlight=LaTeX
-line=62
+line=23
 mode=LaTeX
 open=true
 order=0
 
 [view-settings,view=0,item:defense.tex]
-CursorColumn=8
-CursorLine=62
+CursorColumn=59
+CursorLine=23
 JumpList=
-ViMarks=.,62,8,[,62,8,],62,8
+ViMarks=.,23,46,[,23,46,],23,58
