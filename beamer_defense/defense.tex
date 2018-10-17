@@ -66,17 +66,21 @@
 
 \frame[plain]{\titlepage}
 
-\begin{frame}[c]{Title}{Two topics}
-	\centering{
-	The solar wind's geomagnetic impact and its Sun–Earth evolution\\
-	--\\
-	Predictive models for space weather and for the Parker Solar Probe orbit
-	}\\
+\begin{frame}[c]{Two topics}{}
+	\onslide*<1>{
+	\begin{block}{Title}
+		\centering{
+		The solar wind's geomagnetic impact and its Sun–Earth evolution\\
+		--\\
+		Predictive models for space weather and for the Parker Solar Probe orbit
+		}\\
+	\end{block}
+	}
 	
-	\begin{block}<1->{Study 1}
+	\begin{block}<2->{Study 1}
 		The solar wind's geomagnetic impact -- Predictive models for space weather
 	\end{block}
-	\begin{block}<2>{Study 2}
+	\begin{block}<3>{Study 2}
 		The solar wind's Sun–Earth evolution -- Predictive models for the Parker Solar Probe orbit
 	\end{block}
 \end{frame}
@@ -117,14 +121,15 @@
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
 	\begin{columns}[c]
+	
 	\column{0.5\textwidth}
 
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/20000226_lightbulb_CME_c3full.png}
+	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/20000226_lightbulb_CME_c3full.png}
 	\captionoftiny{figure}{\tiny Courtesy of SOHO/LASCO consortium. SOHO is a project of international cooperation between ESA and NASA}
 
 	\column{0.5\textwidth}
 
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Marubashi2007_fig1.png}
+	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Marubashi2007_fig1.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~1, panel (a)]{Marubashi2007}}}
 	\end{columns}
 \end{frame}
@@ -133,9 +138,6 @@
 	\captionoftiny{figure}{Credit: \href{http://dx.doi.org/10.7289/V5445JGH}{SWPC: WSA-Enlil Solar Wind Prediction. NOAA National Centers for Environmental Information}}
 \end{frame}
 
-\begin{frame}[c]{Solar wind}{}
-	images...
-\end{frame}
 
 \section{Study 1}
 
@@ -144,31 +146,358 @@
 \end{frame}
 
 \begin{frame}[c]{}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Davies1990_magnetosphere_sharpened.png}
+	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Davies1990_magnetosphere_sharpened.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~2.12]{Davies1990}}}
 \end{frame}
 \begin{frame}[c]{}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Kivelson1995_fig9_11_dungey_cycle.png}
+	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Kivelson1995_fig9_11_dungey_cycle.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~9.11]{Hughes1995}}}
 \end{frame}
 \begin{frame}[c]{}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Kp_map.jpg}
+	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Kp_map.jpg}
 	\captionoftiny{figure}{Courtesy of \href{http://isgi.unistra.fr/indices_kp.php}{International Service of Geomagnetic Indices (ISGI)}, 2013}
 \end{frame}
-% \begin{frame}[c]{}{}
-% 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/}
-% 	\captionoftiny{figure}{}
-% \end{frame}
-% \begin{frame}[c]{}{}
-% 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/}
-% 	\captionoftiny{figure}{}
-% \end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_VBzgsm.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/cc_lag_data_d_KpvsVBzgsm.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_VBzgsm_sws_e.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_VBzgsm_sws_fit_e.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_V_d.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/cc_lag_sws_f.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws_e.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws1_d.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws1_fit_e.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws23_e.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws23_fit_e.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/model_performance_d.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/true_skill_score.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/example_sw_plot_1month_b_9hshift_2013-5-1_65.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/example_sw_plot_CME_b_9hshift_2013-6-26_6.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws123_fit_f3.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+
 
 \section{Study 2}
 
 \begin{frame}[c]{Sun--Earth evolution of the solar wind}{}
 	images...
 \end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_MissionDesign2_negative_crop.png}
+		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA/Johns Hopkins APL}, 2018}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_others/images/aa-roll-sc-into-acoustics-cell-0199_square.jpg}
+		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/News-Center/Show-Article.php?articleID=62}{NASA/Johns Hopkins APL/Ed Whitman}, 2017}
+
+	\column<2>{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_fencap2_square.jpg}
+		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/Multimedia/Images.php}{NASA/Johns Hopkins APL/Ed Whitman}, 2018}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}[plain,t]{}{2 columns}
+	\begin{columns}[t]	% [tcb] alignment relative to each column size
+	\column{0.45\textwidth}
+	
+		\includegraphics[width=\textwidth]{figures/psp201810_0204.png}
+		\captionoftiny{figure}{Credit: NASA}
+
+	\column{0.5\textwidth}
+	
+	
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.8\textwidth]{../figures_paper/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.5\textwidth]{../figures_paper/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/OMNI_yearly_ssn_correlation_c_plot.pdf}
+% 		\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.8\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/OMNI_yearly_BVNTvsSSN_a.pdf}
+% 		\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_paper/Vdbl_SSN_ratio_f_plot.pdf}
+% 		\captionoftiny{figure}{}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\includegraphics[width=0.8\textwidth]{../figures_paper/mixed_fit_fixed_4_paper_f_plot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
+% 		\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/SPP_perihelia_prediction_f_plot.pdf}
+% 		\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_paper/SPP_perihelia_prediction_nearest_f_plot.pdf}
+% 		\captionoftiny{figure}{}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/SPP_sw_distributions_b.pdf}
+% 		\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c]{Thank you!}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+	\column{0.5\textwidth}
+
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{References}
+	\scriptsize
+	\begin{thebibliography}{10}
+	
+		\beamertemplatebookbibitems
+		
+		\beamertemplatearticlebibitems
+		
+		\bibitem[{{Cranmer} \& {van Ballegooijen}(2005)}]{Cranmer2005}
+			{Cranmer}, S.~R. \& {van Ballegooijen}, A.~A. 2005, \emph{{On the Generation,
+			Propagation, and Reflection of Alfv{\'e}n Waves from the Solar Photosphere to
+			the Distant Heliosphere}}, \apjs, 156, 265,
+			\href{http://dx.doi.org/10.1086/426507}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2005ApJS..156..265C}{[ADS]}.
+		
+		\bibitem[{Davies(1990)}]{Davies1990}
+			Davies, K. 1990, \emph{Ionospheric Radio} (Institution of Engineering and
+			Technology),
+			\href{http://digital-library.theiet.org/content/books/ew/pbew031e}{[link]},
+			\href{http://dx.doi.org/10.1049/PBEW031E}{[DOI]}.
+		
+		\bibitem[{{Hughes}(1995)}]{Hughes1995}
+			{Hughes}, W.~J. 1995, \emph{{Chapter 9: The magnetopause, magnetotail, and
+			magnetic reconnection}}, ed. M.~Kivelson \& C.~Russell, Introduction to Space
+			Physics (Cambridge University Press, Cambridge), 227--287,
+			\href{http://adsabs.harvard.edu/abs/1995isp..book.....K}{[ADS]}.
+		
+		\bibitem[{{Marubashi} \& {Lepping}(2007)}]{Marubashi2007}
+			{Marubashi}, K. \& {Lepping}, R.~P. 2007, \emph{{Long-duration magnetic clouds:
+			a comparison of analyses using torus- and cylinder-shaped flux rope models}},
+			Annales Geophysicae, 25, 2453,
+			\href{http://dx.doi.org/10.5194/angeo-25-2453-2007}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2007AnGeo..25.2453M}{[ADS]}.
+			
+		\bibitem[{{McComas} {et~al.}(2008{\natexlab{a}}){McComas}, {Ebert}, {Elliott},
+			{Goldstein}, {Gosling}, {Schwadron}, \& {Skoug}}]{McComas200809}
+			{McComas}, D.~J., {Ebert}, R.~W., {Elliott}, H.~A. {et~al.} 2008{\natexlab{a}},
+			\emph{{Weaker solar wind from the polar coronal holes and the whole Sun}},
+			\grl, 35, L18103, \href{http://dx.doi.org/10.1029/2008GL034896}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2008GeoRL..3518103M}{[ADS]}.
+		
+		\bibitem[{{Owens} \& {Forsyth}(2013)}]{Owens2013}
+			{Owens}, M.~J. \& {Forsyth}, R.~J. 2013, \emph{{The Heliospheric Magnetic
+			Field}}, Living Reviews in Solar Physics, 10, 5,
+			\href{http://dx.doi.org/10.12942/lrsp-2013-5}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2013LRSP...10....5O}{[ADS]}.
+		
+		\bibitem[{{Parker}(1958)}]{Parker1958}
+			{Parker}, E.~N. 1958, \emph{{Dynamics of the Interplanetary Gas and Magnetic Fields.}}, \apj, 128, 664, \href{http://dx.doi.org/10.1086/146579}{[DOI]}, \href{http://adsabs.harvard.edu/abs/1958ApJ...128..664P}{[ADS]}.
+
+		\bibitem[{{Pizzo}(1991)}]{Pizzo1991}
+			{Pizzo}, V.~J. 1991, \emph{{The evolution of corotating stream fronts near the
+			ecliptic plane in the inner solar system. II - Three-dimensional
+			tilted-dipole fronts}}, \jgr, 96, 5405,
+			\href{http://dx.doi.org/10.1029/91JA00155}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/1991JGR....96.5405P}{[ADS]}.
+			
+		\bibitem[{{Schatten} {et~al.}(1969){Schatten}, {Wilcox}, \&
+			{Ness}}]{Schatten1969}
+			{Schatten}, K.~H., {Wilcox}, J.~M. \& {Ness}, N.~F. 1969, \emph{{A model of
+			interplanetary and coronal magnetic fields}}, \solphys, 6, 442,
+			\href{http://dx.doi.org/10.1007/BF00146478}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/1969SoPh....6..442S}{[ADS]}.
+
+		\bibitem[{{Venzmer} \& {Bothmer}(2018)}]{Venzmer2018}
+			{Venzmer}, M.~S. \& {Bothmer}, V. 2018, \emph{{Solar-wind predictions for the
+			Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical
+			solar-wind model based on Helios and OMNI observations}}, \aap, 611, A36,
+			\href{http://dx.doi.org/10.1051/0004-6361/201731831}{[DOI]},
+			\href{http://adsabs.harvard.edu/abs/2018A\%26A...611A..36V}{[ADS]}.
+
+	\end{thebibliography}
+\end{frame}
+
+
+\appendix
+
+\section{Backup slides}
 
 \begin{frame}[c]{first slide}{A bit more information about this}
 	This is a text in first frame. \pause This is a text in first frame. This is a text in first frame.
@@ -297,106 +626,6 @@
 	\framebox{\includegraphics[width=0.6\textwidth]{figures/IAG_LogoRGB.png}}
 	\captionoftiny{figure}{Credit: NASA}
 \end{frame}
-
-\begin{frame}[plain,t]{}{2 columns}
-	\begin{columns}[t]	% [tcb] alignment relative to each column size
-	\column{0.45\textwidth}
-	
-		\includegraphics[width=\textwidth]{figures/psp201810_0204.png}
-		\captionoftiny{figure}{Credit: NASA}
-
-		\flushright {\scriptsize Credit: NASA}
-		
-		\hfill {\scriptsize Credit: NASA}
-		
-	\column{0.5\textwidth}
-	
-		\begin{alertblock}{Important theorem}
-			Sample text in red box
-		\end{alertblock}
-
-		some text
-		
-		more text
-	\end{columns}
-\end{frame}
-
-\begin{frame}[allowframebreaks]{Further Reading}
-	\begin{thebibliography}{10}
-	
-		\beamertemplatebookbibitems
-		
-		\beamertemplatearticlebibitems
-		
-		\bibitem[{{Cranmer} \& {van Ballegooijen}(2005)}]{Cranmer2005}
-			{Cranmer}, S.~R. \& {van Ballegooijen}, A.~A. 2005, \emph{{On the Generation,
-			Propagation, and Reflection of Alfv{\'e}n Waves from the Solar Photosphere to
-			the Distant Heliosphere}}, \apjs, 156, 265,
-			\href{http://dx.doi.org/10.1086/426507}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2005ApJS..156..265C}{[ADS]}.
-		
-		\bibitem[{Davies(1990)}]{Davies1990}
-			Davies, K. 1990, \emph{Ionospheric Radio} (Institution of Engineering and
-			Technology),
-			\href{http://digital-library.theiet.org/content/books/ew/pbew031e}{[link]},
-			\href{http://dx.doi.org/10.1049/PBEW031E}{[DOI]}.
-		
-		\bibitem[{{Hughes}(1995)}]{Hughes1995}
-			{Hughes}, W.~J. 1995, \emph{{Chapter 9: The magnetopause, magnetotail, and
-			magnetic reconnection}}, ed. M.~Kivelson \& C.~Russell, Introduction to Space
-			Physics (Cambridge University Press, Cambridge), 227--287,
-			\href{http://adsabs.harvard.edu/abs/1995isp..book.....K}{[ADS]}.
-		
-		\bibitem[{{Marubashi} \& {Lepping}(2007)}]{Marubashi2007}
-			{Marubashi}, K. \& {Lepping}, R.~P. 2007, \emph{{Long-duration magnetic clouds:
-			a comparison of analyses using torus- and cylinder-shaped flux rope models}},
-			Annales Geophysicae, 25, 2453,
-			\href{http://dx.doi.org/10.5194/angeo-25-2453-2007}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2007AnGeo..25.2453M}{[ADS]}.
-			
-		\bibitem[{{McComas} {et~al.}(2008{\natexlab{a}}){McComas}, {Ebert}, {Elliott},
-			{Goldstein}, {Gosling}, {Schwadron}, \& {Skoug}}]{McComas200809}
-			{McComas}, D.~J., {Ebert}, R.~W., {Elliott}, H.~A. {et~al.} 2008{\natexlab{a}},
-			\emph{{Weaker solar wind from the polar coronal holes and the whole Sun}},
-			\grl, 35, L18103, \href{http://dx.doi.org/10.1029/2008GL034896}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2008GeoRL..3518103M}{[ADS]}.
-		
-		\bibitem[{{Owens} \& {Forsyth}(2013)}]{Owens2013}
-			{Owens}, M.~J. \& {Forsyth}, R.~J. 2013, \emph{{The Heliospheric Magnetic
-			Field}}, Living Reviews in Solar Physics, 10, 5,
-			\href{http://dx.doi.org/10.12942/lrsp-2013-5}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2013LRSP...10....5O}{[ADS]}.
-		
-		\bibitem[{{Parker}(1958)}]{Parker1958}
-			{Parker}, E.~N. 1958, \emph{{Dynamics of the Interplanetary Gas and Magnetic Fields.}}, \apj, 128, 664, \href{http://dx.doi.org/10.1086/146579}{[DOI]}, \href{http://adsabs.harvard.edu/abs/1958ApJ...128..664P}{[ADS]}.
-
-		\bibitem[{{Pizzo}(1991)}]{Pizzo1991}
-			{Pizzo}, V.~J. 1991, \emph{{The evolution of corotating stream fronts near the
-			ecliptic plane in the inner solar system. II - Three-dimensional
-			tilted-dipole fronts}}, \jgr, 96, 5405,
-			\href{http://dx.doi.org/10.1029/91JA00155}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/1991JGR....96.5405P}{[ADS]}.
-			
-		\bibitem[{{Schatten} {et~al.}(1969){Schatten}, {Wilcox}, \&
-			{Ness}}]{Schatten1969}
-			{Schatten}, K.~H., {Wilcox}, J.~M. \& {Ness}, N.~F. 1969, \emph{{A model of
-			interplanetary and coronal magnetic fields}}, \solphys, 6, 442,
-			\href{http://dx.doi.org/10.1007/BF00146478}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/1969SoPh....6..442S}{[ADS]}.
-
-		\bibitem[{{Venzmer} \& {Bothmer}(2018)}]{Venzmer2018}
-			{Venzmer}, M.~S. \& {Bothmer}, V. 2018, \emph{{Solar-wind predictions for the
-			Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical
-			solar-wind model based on Helios and OMNI observations}}, \aap, 611, A36,
-			\href{http://dx.doi.org/10.1051/0004-6361/201731831}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2018A\%26A...611A..36V}{[ADS]}.
-
-	\end{thebibliography}
-\end{frame}
-
-\appendix
-
-\section{Backup slides}
 
 \begin{frame}{backup slide}{}
 	gj

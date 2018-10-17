@@ -27,7 +27,7 @@ The second part develops a solar wind model for the inner heliosphere. This stud
 
 
 > contents
-In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion in X days on xxday.
+In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion which occurs in 5 days, next Tuesday.
 
 I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
 
@@ -115,4 +115,10 @@ VB:
 H. Peter:
 - why is it so difficult to predict the in-situ magnetic field of CMEs, even if the magnetic configuration of their source region is known?
 
+PSP orbit:
+Launch: August 12, 2018 at 7:31 UTC
+Venus Flyby: Oct. 3, 2018 at 08:44 UTC
+Oct. 29, 2018 (three days ago / last Monday) — Parker Solar Probe is expected to come within 62.5 Rs (27 million miles) of the Sun. This is the record currently held by Helios 2, set in 1976.
+Oct. 30, 2018 (two days ago / last Tuesday) — Parker Solar Probe is expected to surpass a heliocentric speed of 247,000 km/h (153,454 miles per hour). This is the record for fastest spacecraft measured relative to the Sun, set by Helios 2 in 1976.
+First Perihelion: Nov. 6, 2018 at 03:27 UTC -- 35.7 Rs (next Tuesday!)
 

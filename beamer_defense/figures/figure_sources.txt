@@ -3,9 +3,4 @@
 Where is PSP?
 http://parkersolarprobe.jhuapl.edu/
 Credit: NASA
-    Launch: August 12, 2018 at 7:31 UTC
-    Venus Flyby: Oct. 3, 2018 at 08:44 UTC
-    Oct. 29, 2018 (three days ago / last Monday) — Parker Solar Probe is expected to come within 62.5 Rs (27 million miles) of the Sun. This is the record currently held by Helios 2, set in 1976.
-    Oct. 30, 2018 (two days ago / last Tuesday) — Parker Solar Probe is expected to surpass a heliocentric speed of 247,000 km/h (153,454 miles per hour). This is the record for fastest spacecraft measured relative to the Sun, set by Helios 2 in 1976.
-    First Perihelion: Nov. 6, 2018 at 03:27 UTC -- 35.7 Rs (next Tuesday!)
 
