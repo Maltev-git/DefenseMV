@@ -23,6 +23,15 @@
 \captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedright,font=scriptsize}
 \newcommand{\captionoftiny}[2]{\captionof{#1}{\color{gray} \tiny #2}}
 
+\usepackage{siunitx}
+	\DeclareSIUnit[number-unit-product=\,]\au{au}
+	\DeclareSIUnit[number-unit-product=\,]\nT{\nano\tesla}
+	\DeclareSIUnit[number-unit-product=\,]\Rs{\textit{R}_\sun{}}
+	\DeclareSIUnit[number-unit-product=\,]\RE{\textit{R}_E}
+	\sisetup{table-figures-uncertainty=2, table-number-alignment=center, range-phrase=--, range-units=single}
+
+
+
 % title slide
 \title[Solar wind]{The solar wind's geomagnetic impact and its Sun–Earth evolution}
 \subtitle{Predictive models for space weather and for the Parker Solar Probe orbit}
@@ -88,8 +97,9 @@
 \section{Solar wind}
 
 \begin{frame}[c]{Solar wind}{}
+	\centering
 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Tse_2017_mi800.jpg}
-	\captionoftiny{figure}{Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Peter Aniol, Jan Sládeček}, 2008}
+	\captionoftiny{figure}{\centering Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Peter Aniol, Shaddia Habbal}, 2017}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_Heliosphere_screenshot.png}
@@ -143,6 +153,9 @@
 
 \begin{frame}[c]{Geomagnetic impact of the solar wind}{}
 	images...
+\end{frame}
+\begin{frame}[c]{Geomagnetic impact of the solar wind}{Aims}
+	Empirical relations to predict the \Kp~index from solar wind electric field and from CME and stream velocity
 \end{frame}
 
 \begin{frame}[c]{}{}
@@ -286,12 +299,42 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}[c]{Results}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		Predictive \Kp{} models based on relations with
+		\begin{itemize}%[<+->]
+			\item solar wind electric field proxy (\vBz{})
+			\item velocity of CME-associated flows ($v_\text{CME}$)
+			\item velocity of solar wind streams ($v_\text{stream}$)
+		\end{itemize}
+		
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{Conclusions}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		\begin{itemize}%[<+->]
+			\item The processing of 3-hour extrema of high time resolution data captures short-term geoeffective magnetic features that are neglected when averaging over 3-hour intervals
+			\item The isolated treatment of CMEs and streams is beneficial to the prediction accuracy of \Kp{}
+			\item The prediction models perform well for their limited input information
+		\end{itemize}
+		
+	\end{columns}
+\end{frame}
+
 
 \section{Solar wind model for the inner heliosphere}
 
 \begin{frame}[c]{Sun--Earth evolution of the solar wind}{}
 	images...
 \end{frame}
+\begin{frame}[c]{Sun--Earth evolution of the solar wind}{Aims}
+	Solar wind model for the inner heliosphere and prediction of the near-Sun environment for the PSP orbit
+\end{frame}
+
 \begin{frame}[c]{}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
@@ -408,6 +451,32 @@
 
 	\end{columns}
 \end{frame}
+
+\begin{frame}[c]{Results}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		\begin{itemize}%[<+->]
+			\item Empirical solar wind model for the inner heliosphere
+			\item Solar wind predictions for the PSP orbit
+		\end{itemize}
+		
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{Conclusions}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		\begin{itemize}%[<+->]
+			\item Velocity discrepancy -> Solar wind is still being accelerated up to 20\,\Rs{}
+			\item Temperature discrepancy -> Solar wind is still being heated up to 20\,\Rs{}
+		\end{itemize}
+		
+	\end{columns}
+\end{frame}
+
+
+\section{End matter}
 
 \begin{frame}[c]{Thank you!}{}
 	\begin{columns}[c]
