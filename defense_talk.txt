@@ -12,7 +12,7 @@ Thank you for the introduction... (including the defense committee members)
 
 Welcome to my defense! I am happy that you all came, in particular to see so many familiar faces. I probably share my nervousness with my family and some of my close friends ;)
 
-First, I thank the six members of my defense committee for kindly agreeing to evaluate my defense performance (name them in case VB forgot).
+First, I thank the six members of the examination board for kindly agreeing to evaluate my defense performance (name them in case VB forgot).
 
 Today I will present to you the studies I included in my thesis and after that defend my thesis against critical questions.
 
@@ -27,18 +27,26 @@ The second part develops a solar wind model for the inner heliosphere. This stud
 
 
 > contents
-In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft and its first perihelion which occurs in 5 days, next Tuesday.
+In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August and its first perihelion which will occur in 5 days, next Tuesday.
 
-I still begin with introducing the solar wind and some of its major properties that are relevant for this work.
+I still begin with introducing the solar wind and some of its major properties that are of relevance for this work.
 
 
 > solar wind slides
 Solar wind
-- history (comets, Parker, satellite measurements)
+
+Solar wind is a continuous flow of magnetized plasma that is emitted by the Sun into space. It consists mainly of electrons and protons with a helium share of about 5 %.
+
+Near the Sun, the coronal plasma is still guided by the magnetic field lines. At a few solar radii distance from the Sun, the magnetic pressure drops below the thermal pressure and the magnetic field freezes in the plasma flow. This distance is called the source surface -- from here the solar wind streams radially away into space.
+
+Due to the solar rotation with a period of about 27 days, the magnetic field of the solar wind is shaped in an Archimedean spiral pattern, called the Parker spiral. At the distance of Earth, the spiral angle is on average about 45 degrees.
+
+The solar wind flows through the solar system until it interacts with the interstellar medium far beyond Pluto.
+
 - solar magnetic field (near-Sun field geometry, Parker spiral)
 - solar activity cycle (sunspots + Ulysses figure)
 - slow/fast wind (CH image and in-situ plot)
-- CMEs (coronagraph + in-situ plot)
+- CMEs (coronagraph + in-situ plot + 3-part structure)
 
 
 > first study slides
@@ -58,6 +66,7 @@ outlook?
 
 
 > second study slides
+- solar wind history (comets, Parker, satellite measurements)
 - solar wind measured throughout the heliosphere, not near-Sun
 questions: coronal heating and solar wind acceleration
 current problems: Parker Solar Probe (mission goals)
@@ -96,6 +105,14 @@ what are the proposed mechanisms for the coronal heating and the solar wind acce
 heating mechanisms:
 acceleration mechanisms:
 
+what are the possible sources of slow solar wind?
+- CH boundaries and small CHs, high superradial expansion of open field lines
+- CH boundaries, released plasma from reconnections between open and closed lines
+- Helmet/pseudo-streamers in active regions, released transient plasma blobs -> HPS belt
+- Jets from coronal bright points
+- Slow unidentified CMEs
+
+
 why estimating the solar wind there now when the PSP will measure it anyway soon?
 
 what is this study good for?
@@ -114,6 +131,8 @@ VB:
 
 H. Peter:
 - why is it so difficult to predict the in-situ magnetic field of CMEs, even if the magnetic configuration of their source region is known?
+
+
 
 PSP orbit:
 Launch: August 12, 2018 at 7:31 UTC

@@ -30,7 +30,12 @@
 	\DeclareSIUnit[number-unit-product=\,]\RE{\textit{R}_E}
 	\sisetup{table-figures-uncertainty=2, table-number-alignment=center, range-phrase=--, range-units=single}
 
+\mode<handout>{
+	\usepackage{pgfpages}
+	\pgfpagesuselayout{16 on 1}[a4paper,border shrink=8mm,landscape]
 
+	\setbeamercolor{background canvas}{bg=black!2}
+}
 
 % title slide
 \title[Solar wind]{The solar wind's geomagnetic impact and its Sun–Earth evolution}
@@ -102,49 +107,77 @@
 	\captionoftiny{figure}{\centering Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Peter Aniol, Shaddia Habbal}, 2017}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+
+	\includegraphics[width=\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
+	
+	\column{0.5\textwidth}
+	
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
 	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_Heliosphere_screenshot.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~9]{Owens2013}}}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/20130529_000119_1024_0193.jpg}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+
+	\includegraphics[width=\textwidth]{../figures_of_others/images/20130529_000119_1024_0193.jpg}
 	\captionoftiny{figure}{Credit: NASA/SDO and the AIA, EVE and HMI science teams}
+	
+	\column{0.5\textwidth}
+	
+	\end{columns}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Cranmer2005_fig1_color.png}
+	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/Cranmer2005_fig1_color.png}
 	\captionoftiny{figure}{Courtesy of S. R. Cranmer}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
-	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
-\end{frame}
-\begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_CIR_2panel_screenshot.png}
+	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/Owens2013_CIR_2panel_screenshot.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~7]{Owens2013}}; right panel adapted from {\citet[Fig.~2]{Pizzo1991}}}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
-	\captionoftiny{figure}{Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
+	\centering
+	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
+% 	\captionoftiny{figure}{Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/McComas2008_Ulysses_orbit_.png}
+	\includegraphics[width=0.9\textwidth]{../figures_of_others/images/McComas2008_Ulysses_orbit_.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{McComas200809}}}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
 	\begin{columns}[c]
+	\column{0.5\textwidth}
 	
-	\column{0.5\textwidth}
+		\onslide*<1-2>{
+		\includegraphics[height=\textwidth]{../figures_of_others/images/20000226_lightbulb_CME_c3full.png}
+		\captionoftiny{figure}{Courtesy of SOHO/LASCO consortium. SOHO is a project of international cooperation between ESA and NASA}
+		}
+		\onslide*<3>{
+		\includegraphics[height=\textwidth]{../figures_of_others/images/STEREO_A_COR2_20130624_022400_dbc2A.png}
+		\captionoftiny{figure}{Courtesy of \href{https://stereo.gsfc.nasa.gov/gallery/copyright.shtml}{STEREO/COR2 consortium (NASA)}\\\ }
+		}
+		
+		\onslide*<4>{
+		\includegraphics[height=\textwidth]{../figures_of_others/images/SOHO_LASCO_C3_20170906_151807.png}
+		\captionoftiny{figure}{Courtesy of SOHO/LASCO consortium; SOHO is a project of international cooperation between ESA and NASA}
+		}
+	
+	\column{0.05\textwidth}
+	
+	\column<2->{0.45\textwidth}
 
-	\includegraphics[height=0.8\textwidth]{../figures_of_others/images/20000226_lightbulb_CME_c3full.png}
-	\captionoftiny{figure}{\tiny Courtesy of SOHO/LASCO consortium. SOHO is a project of international cooperation between ESA and NASA}
-
-	\column{0.5\textwidth}
-
-	\includegraphics[height=0.8\textwidth]{../figures_of_others/images/Marubashi2007_fig1.png}
-	\captionoftiny{figure}{Credit: {\citet[Fig.~1, panel (a)]{Marubashi2007}}\\\ }
+		\includegraphics[height=0.9\textwidth]{../figures_of_others/images/Marubashi2007_fig1.png}
+		\captionoftiny{figure}{Credit: {\citet[Fig.~1, panel (a)]{Marubashi2007}}\\\ }
+		
 	\end{columns}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/enlil_com1_20170906T150000.jpg}
+	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/enlil_com1_20170906T150000.jpg}
 	\captionoftiny{figure}{Credit: \href{http://dx.doi.org/10.7289/V5445JGH}{SWPC: WSA-Enlil Solar Wind Prediction. NOAA National Centers for Environmental Information}}
 \end{frame}
 
@@ -214,12 +247,10 @@
 \end{frame}
 \begin{frame}[c]{}{}
 	\begin{columns}[c]
-	\column{0.5\textwidth}
+	\column{\textwidth}
 		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws_e.pdf}
+		\includegraphics[width=0.8\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws_e.pdf}
 	% 	\captionoftiny{figure}{}
-
-	\column{0.5\textwidth}
 
 	\end{columns}
 \end{frame}
@@ -267,23 +298,20 @@
 \end{frame}
 \begin{frame}[c]{}{}
 	\begin{columns}[c]
-	\column{0.5\textwidth}
+	\column{\textwidth}
 		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/example_sw_plot_1month_b_9hshift_2013-5-1_65.pdf}
+		\centering
+		\includegraphics[width=0.8\textwidth]{../figures_of_mine/chapter2/example_sw_plot_1month_b_9hshift_2013-5-1_65.pdf}
 	% 	\captionoftiny{figure}{}
-
-	\column{0.5\textwidth}
 
 	\end{columns}
 \end{frame}
 \begin{frame}[c]{}{}
 	\begin{columns}[c]
-	\column{0.5\textwidth}
-		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/example_sw_plot_CME_b_9hshift_2013-6-26_6.pdf}
+	\column{\textwidth}
+		\centering
+		\includegraphics[width=0.8\textwidth]{../figures_of_mine/chapter2/example_sw_plot_CME_b_9hshift_2013-6-26_6.pdf}
 	% 	\captionoftiny{figure}{}
-
-	\column{0.5\textwidth}
 
 	\end{columns}
 \end{frame}
@@ -361,18 +389,22 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}[plain,t]{}{2 columns}
+\begin{frame}[c]{}{}
 	\begin{columns}[t]	% [tcb] alignment relative to each column size
-	\column{0.45\textwidth}
+	\column{0.5\textwidth}
 	
-		\includegraphics[width=\textwidth]{../talk_figures/psp201810_0400.png}
+		\hspace*{-21pt}
+		\includegraphics[height=0.85\textwidth]{../talk_figures/psp201810_0400_top.png}
 		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
 
 	\column{0.5\textwidth}
 	
+		\hspace*{-21pt}
+		\includegraphics[height=0.85\textwidth]{../talk_figures/psp201810_0400_bottom.png}
+% 		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
+		
 	\end{columns}
 \end{frame}
-
 
 \begin{frame}[c]{}{}
 	\includegraphics[width=0.8\textwidth]{../figures_paper/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
@@ -599,6 +631,14 @@
 		\item<+-> asgag
 		\item<+-> asgag
 		\item<+-> asgag
+	\end{itemize}
+\end{frame}
+\begin{frame}{Ein Demotitel}{}
+	\begin{itemize}[<+->]
+		\item dasgfs
+		\item asgag
+		\item asgag
+		\item asgag
 	\end{itemize}
 \end{frame}
 
