@@ -1,41 +1,7 @@
 
+\input{style/header}
 \input{style/short_commands_malte}
 
-\documentclass[11pt,aspectratio=1610]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
-\usepackage[utf8]{inputenc}
-% 16:10 -> 160x100mm
-% 4:3 native slide format 128mm x 96mm
-
-\usetheme{Darmstadt}
-\usecolortheme{beaver}
-\setbeamercolor{title}{fg=blue}
-
-% \setbeamertemplate{footline}[page number]
-% \setbeamertemplate{footline}[frame number]
-% \setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
-\setbeamertemplate{footline}{\hfill\strut\footnotesize\insertpagenumber\quad\quad}
-\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol\insertbackfindforwardnavigationsymbol}
-
-\usepackage{natbib}	%defines citation style
-% \citestyle{aa}
-
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedright,font=scriptsize}
-\newcommand{\captionoftiny}[2]{\captionof{#1}{\color{gray} \tiny #2}}
-
-\usepackage{siunitx}
-	\DeclareSIUnit[number-unit-product=\,]\au{au}
-	\DeclareSIUnit[number-unit-product=\,]\nT{\nano\tesla}
-	\DeclareSIUnit[number-unit-product=\,]\Rs{\textit{R}_\sun{}}
-	\DeclareSIUnit[number-unit-product=\,]\RE{\textit{R}_E}
-	\sisetup{table-figures-uncertainty=2, table-number-alignment=center, range-phrase=--, range-units=single}
-
-\mode<handout>{
-	\usepackage{pgfpages}
-	\pgfpagesuselayout{16 on 1}[a4paper,border shrink=8mm,landscape]
-
-	\setbeamercolor{background canvas}{bg=black!2}
-}
 
 % title slide
 \title[Solar wind]{The solar wind's geomagnetic impact and its Sun–Earth evolution}
@@ -99,6 +65,7 @@
 	\end{block}
 \end{frame}
 
+
 \section{Solar wind}
 
 \begin{frame}[c]{Solar wind}{}
@@ -107,6 +74,19 @@
 	\captionoftiny{figure}{\centering Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Peter Aniol, Shaddia Habbal}, 2017}
 \end{frame}
 \begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/Owens2013_Heliosphere_screenshot.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~9]{Owens2013}}}
+\end{frame}
+\begin{frame}[c]{Solar wind}{}
+	\includegraphics[width=0.7\textwidth]{../talk_figures/ace_realtime_ap_plot.png}
+% 	\captionoftiny{figure}{}
+\end{frame}
+
+\begin{frame}[c]{Solar magnetic field}{}
+	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/Cranmer2005_fig1_color.png}
+	\captionoftiny{figure}{Courtesy of S. R. Cranmer}
+\end{frame}
+\begin{frame}[c]{Solar magnetic field}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 
@@ -117,11 +97,7 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.6\textwidth]{../figures_of_others/images/Owens2013_Heliosphere_screenshot.png}
-	\captionoftiny{figure}{Credit: {\citet[Fig.~9]{Owens2013}}}
-\end{frame}
-\begin{frame}[c]{Solar wind}{}
+\begin{frame}[c]{Slow and fast solar wind}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 
@@ -132,24 +108,33 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
-	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/Cranmer2005_fig1_color.png}
-	\captionoftiny{figure}{Courtesy of S. R. Cranmer}
-\end{frame}
-\begin{frame}[c]{Solar wind}{}
+\begin{frame}[c]{Slow and fast solar wind}{}
 	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/Owens2013_CIR_2panel_screenshot.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~7]{Owens2013}}; right panel adapted from {\citet[Fig.~2]{Pizzo1991}}}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
+\begin{frame}[c]{Solar wind}{In-situ example}
+	\includegraphics[width=0.8\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+
+\begin{frame}[c]{Solar activity}{Sunspots}
+	\centering
+% 	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/}
+	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{Solar activity}{}
 	\centering
 	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
 % 	\captionoftiny{figure}{Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
+
+	\vfill\hfill \hyperlink{butterfly}{\beamerskipbutton{Magnetic butterfly diagram}}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
+\begin{frame}[c]{Solar activity}{}
 	\includegraphics[width=0.9\textwidth]{../figures_of_others/images/McComas2008_Ulysses_orbit_.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~1]{McComas200809}}}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
+
+\begin{frame}[c]{Coronal mass ejections}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 	
@@ -176,7 +161,15 @@
 		
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{Solar wind}{}
+\begin{frame}[c]{CME orientation}{}
+	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/Bothmer1998_fig18.png}
+	\captionoftiny{figure}{Credit: {\citet[Fig.~18]{Bothmer1998}}}
+\end{frame}
+\begin{frame}[c]{In-situ CMEs}{}
+	\includegraphics[width=0.8\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CME_2013-6-26_6.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+\begin{frame}[c]{Solar wind and CME forecast}{}
 	\includegraphics[width=0.8\textwidth]{../figures_of_others/images/enlil_com1_20170906T150000.jpg}
 	\captionoftiny{figure}{Credit: \href{http://dx.doi.org/10.7289/V5445JGH}{SWPC: WSA-Enlil Solar Wind Prediction. NOAA National Centers for Environmental Information}}
 \end{frame}
@@ -191,23 +184,47 @@
 	Empirical relations to predict the \Kp~index from solar wind electric field and from CME and stream velocity
 \end{frame}
 
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Magnetosphere}{}
 	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Davies1990_magnetosphere_sharpened.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~2.12]{Davies1990}}}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Magnetosphere}{}
+	4 interaction mechanisms
+\end{frame}
+\begin{frame}[c]{Magnetosphere}{}
 	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Kivelson1995_fig9_11_dungey_cycle.png}
 	\captionoftiny{figure}{Credit: {\citet[Fig.~9.11]{Hughes1995}}}
 \end{frame}
-\begin{frame}[c]{}{}
-	\includegraphics[width=0.5\textwidth]{../figures_of_others/images/Kp_map.jpg}
-	\captionoftiny{figure}{Courtesy of \href{http://isgi.unistra.fr/indices_kp.php}{International Service of Geomagnetic Indices (ISGI)}, 2013}
+\begin{frame}[c]{Magnetosphere}{}
+	4 factors for merging flux rate
 \end{frame}
-\begin{frame}[c]{}{}
+
+\begin{frame}[c]{\Kp~index}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_VBzgsm.pdf}
+		13 observatories...
+		
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_others/images/Kp_map.jpg}
+		\captionoftiny{figure}{Courtesy of \href{http://isgi.unistra.fr/indices_kp.php}{International Service of Geomagnetic Indices (ISGI)}, 2013}
+	\end{columns}
+\end{frame}
+\begin{frame}[c]{\Kp~index}{Quicklook \Kp{}}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/ql_bar.png}
+		\captionoftiny{figure}{Credit: \href{http://www.gfz-potsdam.de/en/kp-index/}{GFZ~Potsdam}, 2018}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c]{Solar wind electric field}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+% 		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_VBzgsm.pdf}
 	% 	\captionoftiny{figure}{}
 
 	\column{0.5\textwidth}
@@ -217,7 +234,7 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Solar wind electric field}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -231,11 +248,11 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Solar wind velocity}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_V_d.pdf}
+% 		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_V_d.pdf}
 	% 	\captionoftiny{figure}{}
 
 	\column{0.5\textwidth}
@@ -245,7 +262,13 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+
+\begin{frame}[c]{Solar wind velocity}{}
+	CME -- stream separation
+	
+	Solar Wind Structures list
+\end{frame}
+\begin{frame}[c]{Solar wind velocity}{}
 	\begin{columns}[c]
 	\column{\textwidth}
 		
@@ -255,6 +278,21 @@
 	\end{columns}
 \end{frame}
 \begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+% 		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/histogram_V_d.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/cc_lag_sws_f.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c]{CME velocity}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -268,7 +306,7 @@
 	
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Stream velocity}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -278,20 +316,6 @@
 	\column{0.5\textwidth}
 
 		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_2dhistogram_V_sws23_fit_e.pdf}
-	% 	\captionoftiny{figure}{}
-	
-	\end{columns}
-\end{frame}
-\begin{frame}[c]{}{}
-	\begin{columns}[c]
-	\column{0.5\textwidth}
-		
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/model_performance_d.pdf}
-	% 	\captionoftiny{figure}{}
-
-	\column{0.5\textwidth}
-
-		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/true_skill_score.pdf}
 	% 	\captionoftiny{figure}{}
 	
 	\end{columns}
@@ -341,8 +365,8 @@
 	\end{columns}
 \end{frame}
 \begin{frame}[c]{Conclusions}{}
-	\begin{columns}[c]
-	\column{\textwidth}
+% 	\begin{columns}[c]
+% 	\column{\textwidth}
 		
 		\begin{itemize}%[<+->]
 			\item The processing of 3-hour extrema of high time resolution data captures short-term geoeffective magnetic features that are neglected when averaging over 3-hour intervals
@@ -350,31 +374,27 @@
 			\item The prediction models perform well for their limited input information
 		\end{itemize}
 		
-	\end{columns}
+% 	\end{columns}
+	
+	\vspace*{\fill} \hfill \hyperlink{prediction_performance}{\beamerskipbutton{Prediction performance}}
 \end{frame}
 
 
 \section{Solar wind model for the inner heliosphere}
 
 \begin{frame}[c]{Sun--Earth evolution of the solar wind}{}
-	images...
+	Solar wind measured in-situ throughout the heliosphere -- except near-Sun
+\end{frame}
+\begin{frame}[c]{Sun--Earth evolution of the solar wind}{}
+	special scientific interest:\\
+	coronal heating\\
+	solar wind acceleration
 \end{frame}
 \begin{frame}[c]{Sun--Earth evolution of the solar wind}{Aims}
 	Solar wind model for the inner heliosphere and prediction of the near-Sun environment for the PSP orbit
 \end{frame}
 
-\begin{frame}[c]{}{}
-	\begin{columns}[c]
-	\column{0.5\textwidth}
-		
-		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_MissionDesign2_negative_crop.png}
-		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA/Johns Hopkins APL}, 2018}
-
-	\column{0.5\textwidth}
-
-	\end{columns}
-\end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Parker Solar Probe}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -382,14 +402,26 @@
 		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/News-Center/Show-Article.php?articleID=62}{NASA/Johns Hopkins APL/Ed Whitman}, 2017}
 
 	\column<2>{0.5\textwidth}
-
-		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_fencap2_square.jpg}
-		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/Multimedia/Images.php}{NASA/Johns Hopkins APL/Ed Whitman}, 2018}
+		
+		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_MissionDesign2_negative_crop.png}
+		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA/Johns Hopkins APL}, 2018}
 
 	\end{columns}
 \end{frame}
+\begin{frame}[c]{Parker Solar Probe}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_others/images/PSP_fencap2_square.jpg}
+		\captionoftiny{figure}{Credit: \href{http://parkersolarprobe.jhuapl.edu/Multimedia/Images.php}{NASA/Johns Hopkins APL/Ed Whitman}, 2018}
 
-\begin{frame}[c]{}{}
+	\column<2>{0.5\textwidth}
+
+		launch date, Venus flyby, first perihelion
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c]{PSP's current position}{}
 	\begin{columns}[t]	% [tcb] alignment relative to each column size
 	\column{0.5\textwidth}
 	
@@ -407,14 +439,26 @@
 \end{frame}
 
 \begin{frame}[c]{}{}
-	\includegraphics[width=0.8\textwidth]{../figures_paper/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
-% 	\captionoftiny{figure}{}
+	motivation
 \end{frame}
-\begin{frame}[c]{}{}
-	\includegraphics[width=0.5\textwidth]{../figures_paper/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}
-% 	\captionoftiny{figure}{}
+\begin{frame}[c]{Frequency distributions}{}
+	\begin{columns}[c]	% [tcb] alignment relative to each column size
+	\column{0.7\textwidth}
+	
+		\hspace*{-21pt}
+		\includegraphics[width=1.1\textwidth]{../figures_paper/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column<2>{0.3\textwidth}
+	
+		\hspace*{-10pt}
+		\includegraphics[width=1.2\textwidth]{../figures_paper/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\end{columns}
+	\vspace*{\fill} \hfill \hyperlink{lognormal_distribution}{\beamerskipbutton{Lognormal distribution}}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Sunspot number dependence}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -425,11 +469,7 @@
 
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
-	\includegraphics[width=0.8\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
-% 	\captionoftiny{figure}{}
-\end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Sunspot number dependence}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -443,11 +483,22 @@
 
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{Sunspot number dependence}{}
+	\centering
+	\includegraphics[width=0.8\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
+% 	\captionoftiny{figure}{}
+\end{frame}
+
+\begin{frame}[c]{Solar distance dependence}{}
+	\centering
 	\includegraphics[width=0.8\textwidth]{../figures_paper/mixed_fit_fixed_4_paper_f_plot.pdf}
 % 	\captionoftiny{figure}{}
 \end{frame}
+
 \begin{frame}[c]{}{}
+	combine models, extrapolation
+\end{frame}
+\begin{frame}[c]{SSN prediction}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -458,28 +509,32 @@
 
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+
+\begin{frame}[c]{PSP orbit prediction}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
+		\centering
+		First perihelion (9.86~\Rs)\\\ 
+		
 		\includegraphics[width=\textwidth]{../figures_paper/SPP_perihelia_prediction_f_plot.pdf}
-% 		\captionoftiny{figure}{}
 
-	\column{0.5\textwidth}
-
+	\column<2>{0.5\textwidth}
+	
+		\centering
+		First closest perihelion (36.7~\Rs)\\\ 
+		
 		\includegraphics[width=\textwidth]{../figures_paper/SPP_perihelia_prediction_nearest_f_plot.pdf}
-% 		\captionoftiny{figure}{}
 
 	\end{columns}
 \end{frame}
-\begin{frame}[c]{}{}
+\begin{frame}[c]{PSP perihelia prediction}{}
 	\begin{columns}[c]
-	\column{0.5\textwidth}
+	\column{0.6\textwidth}
 		
 		\includegraphics[width=\textwidth]{../figures_paper/SPP_sw_distributions_b.pdf}
-% 		\captionoftiny{figure}{}
 
-	\column{0.5\textwidth}
+	\column{0.4\textwidth}
 
 	\end{columns}
 \end{frame}
@@ -528,68 +583,7 @@
 		
 		\beamertemplatearticlebibitems
 		
-		\bibitem[{{Cranmer} \& {van Ballegooijen}(2005)}]{Cranmer2005}
-			{Cranmer}, S.~R. \& {van Ballegooijen}, A.~A. 2005, \emph{{On the Generation,
-			Propagation, and Reflection of Alfv{\'e}n Waves from the Solar Photosphere to
-			the Distant Heliosphere}}, \apjs, 156, 265,
-			\href{http://dx.doi.org/10.1086/426507}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2005ApJS..156..265C}{[ADS]}.
-		
-		\bibitem[{Davies(1990)}]{Davies1990}
-			Davies, K. 1990, \emph{Ionospheric Radio} (Institution of Engineering and
-			Technology),
-			\href{http://digital-library.theiet.org/content/books/ew/pbew031e}{[link]},
-			\href{http://dx.doi.org/10.1049/PBEW031E}{[DOI]}.
-		
-		\bibitem[{{Hughes}(1995)}]{Hughes1995}
-			{Hughes}, W.~J. 1995, \emph{{Chapter 9: The magnetopause, magnetotail, and
-			magnetic reconnection}}, ed. M.~Kivelson \& C.~Russell, Introduction to Space
-			Physics (Cambridge University Press, Cambridge), 227--287,
-			\href{http://adsabs.harvard.edu/abs/1995isp..book.....K}{[ADS]}.
-		
-		\bibitem[{{Marubashi} \& {Lepping}(2007)}]{Marubashi2007}
-			{Marubashi}, K. \& {Lepping}, R.~P. 2007, \emph{{Long-duration magnetic clouds:
-			a comparison of analyses using torus- and cylinder-shaped flux rope models}},
-			Annales Geophysicae, 25, 2453,
-			\href{http://dx.doi.org/10.5194/angeo-25-2453-2007}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2007AnGeo..25.2453M}{[ADS]}.
-			
-		\bibitem[{{McComas} {et~al.}(2008{\natexlab{a}}){McComas}, {Ebert}, {Elliott},
-			{Goldstein}, {Gosling}, {Schwadron}, \& {Skoug}}]{McComas200809}
-			{McComas}, D.~J., {Ebert}, R.~W., {Elliott}, H.~A. {et~al.} 2008{\natexlab{a}},
-			\emph{{Weaker solar wind from the polar coronal holes and the whole Sun}},
-			\grl, 35, L18103, \href{http://dx.doi.org/10.1029/2008GL034896}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2008GeoRL..3518103M}{[ADS]}.
-		
-		\bibitem[{{Owens} \& {Forsyth}(2013)}]{Owens2013}
-			{Owens}, M.~J. \& {Forsyth}, R.~J. 2013, \emph{{The Heliospheric Magnetic
-			Field}}, Living Reviews in Solar Physics, 10, 5,
-			\href{http://dx.doi.org/10.12942/lrsp-2013-5}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2013LRSP...10....5O}{[ADS]}.
-		
-		\bibitem[{{Parker}(1958)}]{Parker1958}
-			{Parker}, E.~N. 1958, \emph{{Dynamics of the Interplanetary Gas and Magnetic Fields.}}, \apj, 128, 664, \href{http://dx.doi.org/10.1086/146579}{[DOI]}, \href{http://adsabs.harvard.edu/abs/1958ApJ...128..664P}{[ADS]}.
-
-		\bibitem[{{Pizzo}(1991)}]{Pizzo1991}
-			{Pizzo}, V.~J. 1991, \emph{{The evolution of corotating stream fronts near the
-			ecliptic plane in the inner solar system. II - Three-dimensional
-			tilted-dipole fronts}}, \jgr, 96, 5405,
-			\href{http://dx.doi.org/10.1029/91JA00155}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/1991JGR....96.5405P}{[ADS]}.
-			
-		\bibitem[{{Schatten} {et~al.}(1969){Schatten}, {Wilcox}, \&
-			{Ness}}]{Schatten1969}
-			{Schatten}, K.~H., {Wilcox}, J.~M. \& {Ness}, N.~F. 1969, \emph{{A model of
-			interplanetary and coronal magnetic fields}}, \solphys, 6, 442,
-			\href{http://dx.doi.org/10.1007/BF00146478}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/1969SoPh....6..442S}{[ADS]}.
-
-		\bibitem[{{Venzmer} \& {Bothmer}(2018)}]{Venzmer2018}
-			{Venzmer}, M.~S. \& {Bothmer}, V. 2018, \emph{{Solar-wind predictions for the
-			Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical
-			solar-wind model based on Helios and OMNI observations}}, \aap, 611, A36,
-			\href{http://dx.doi.org/10.1051/0004-6361/201731831}{[DOI]},
-			\href{http://adsabs.harvard.edu/abs/2018A\%26A...611A..36V}{[ADS]}.
+		\input{outsourced_parts/bibitems}
 
 	\end{thebibliography}
 \end{frame}
@@ -598,6 +592,70 @@
 \appendix
 
 \section{Backup slides}
+
+\subsection{Solar wind}
+
+\begin{frame}[c,label=butterfly]{Solar activity}{Magnetic butterfly diagram}
+% 	\hypertarget{butterfly}{\beamerbutton{I'm on this slide}}
+	
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figures_of_others/images/Hathaway_magbfly_201804_cropped.png}
+	\captionoftiny{figure}{\centering Courtesy of David~Hathaway, \href{http://solarcyclescience.com/solarcycle.html}{Solar Cycle Science}, 2018, updated version of {\citet[Fig.~17]{Hathaway2015}}}
+\end{frame}
+
+\subsection{Chapter2}
+
+\begin{frame}[c]{\Kp{} long-term variations}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_histogram_yearlySSN_b.pdf}
+% 		\captionoftiny{figure}{}
+		
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/Kp_histogram_monthly.pdf}
+% 		\captionoftiny{figure}{}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[c,label=prediction_performance]{Prediction performance}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/model_performance_d.pdf}
+	% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+
+		\includegraphics[width=\textwidth]{../figures_of_mine/chapter2/true_skill_score.pdf}
+	% 	\captionoftiny{figure}{}
+	
+	\end{columns}
+\end{frame}
+
+\subsection{SW model}
+
+\begin{frame}[c,label=lognormal_distribution]{Lognormal distribution}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+	\includegraphics[width=\textwidth]{../figures_of_mine/gnuplots/lognormal_semi_log.pdf}
+% 	\captionoftiny{figure}{}
+
+	\column{0.5\textwidth}
+	
+	Probability density function:
+	\begin{align}
+		f(x) &= \frac{1}{\sigma \sqrt{2 \pi} x} \, \text{e}^{- \frac{(\ln x - \mu)^2}{2 \sigma^2}}	\nonumber
+	\end{align}
+	Location ($\mu$) and shape parameter ($\sigma$)
+	
+	\end{columns}
+\end{frame}
+
+
+\section{Test slides}
 
 \begin{frame}[c]{first slide}{A bit more information about this}
 	This is a text in first frame. \pause This is a text in first frame. This is a text in first frame.
@@ -732,6 +790,14 @@
 
 \begin{frame}{backup slide}{}
 	gj
+	
+	\hyperlink{butterfly}{\beamerbutton{Magnetic butterfly diagram}}
+	
+	\hyperlink{butterfly}{\beamergotobutton{Go to my frame}}
+	
+	\hyperlink{butterfly}{\beamerreturnbutton{Back}}
+	
+	\hyperlink{butterfly}{\beamerskipbutton{butterfly page}}
 \end{frame}
 
 % \begin{frame}[]{title}{subtitle}

@@ -1,10 +1,10 @@
 
 ### timing
-this: 20:30 mins
-abstract: 11:15
-intro: 21:30
-conclusions 1: 14:26
-conclusions 2: 14:50
+this: 20:30 min -> 17:24 min
+abstract: 11:15 -> 11:57
+intro: 21:30 -> 16:58
+conclusions 1: 14:26 -> 13:21
+conclusions 2: 14:50 -> 14:19
 
 ### talk
 > title slide
@@ -27,7 +27,7 @@ The second part develops a solar wind model for the inner heliosphere. This stud
 
 
 > contents
-In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August and its first perihelion which will occur in 5 days, next Tuesday.
+In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August and its first perihelion will occur 5 days from now -- next Tuesday.
 
 I still begin with introducing the solar wind and some of its major properties that are of relevance for this work.
 
@@ -35,7 +35,7 @@ I still begin with introducing the solar wind and some of its major properties t
 > solar wind slides
 Solar wind
 
-Solar wind is a continuous flow of magnetized plasma that is emitted by the Sun into space. It consists mainly of electrons and protons with a helium share of about 5 %.
+Solar wind is a continuous outflow of magnetized plasma that is emitted by the Sun into space. It consists mainly of electrons and protons -- with a helium share that varies around 5 % and traces of heavier ions.
 
 Near the Sun, the coronal plasma is still guided by the magnetic field lines. At a few solar radii distance from the Sun, the magnetic pressure drops below the thermal pressure and the magnetic field freezes in the plasma flow. This distance is called the source surface -- from here the solar wind streams radially away into space.
 
