@@ -1,0 +1,40 @@
+
+\documentclass[11pt,aspectratio=1610]{beamer}	% Available font sizes 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt. Default font size 11pt (corresponds to 22pt at the full screen mode)
+\usepackage[utf8]{inputenc}
+% 16:10 -> 160x100mm
+% 4:3 native slide format 128mm x 96mm
+
+\usetheme{Darmstadt}
+\usecolortheme{beaver}
+\setbeamercolor{title}{fg=blue}
+
+% \setbeamertemplate{footline}[page number]
+% \setbeamertemplate{footline}[frame number]
+% \setbeamertemplate{footline}{\hfill\strut\insertframenumber\quad\quad}
+\setbeamertemplate{footline}{\hfill\strut\footnotesize\insertpagenumber\quad\quad}
+\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol\insertbackfindforwardnavigationsymbol}
+
+\usepackage{natbib}	%defines citation style
+% \citestyle{aa}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty,singlelinecheck=false,aboveskip=1pt,justification=raggedright,font=scriptsize}
+\newcommand{\captionoftiny}[2]{\captionof{#1}{\color{gray} \tiny #2}}
+
+\setbeamercolor{button}{bg=white,fg=gray}
+
+\usepackage{siunitx}
+	\DeclareSIUnit[number-unit-product=\,]\au{au}
+	\DeclareSIUnit[number-unit-product=\,]\nT{\nano\tesla}
+	\DeclareSIUnit[number-unit-product=\,]\Rs{\textit{R}_\sun{}}
+	\DeclareSIUnit[number-unit-product=\,]\RE{\textit{R}_E}
+	\sisetup{table-figures-uncertainty=2, table-number-alignment=center, range-phrase=--, range-units=single}
+
+\mode<handout>{
+	\usepackage{pgfpages}
+	\pgfpagesuselayout{16 on 1}[a4paper,border shrink=8mm,landscape]
+
+	\setbeamercolor{background canvas}{bg=black!2}
+}
+
+
