@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=defense.tex
+lastDocument=style/header.tex
 masterDocument=
 name=defense
 pkg_extIsRegExp=false
@@ -17,7 +17,7 @@ MakeIndex=
 QuickBuild=
 
 [document-settings,item:defense.tex]
-Bookmarks=459,104,784,563,461,105,462,38,39,77,78,420,847,458
+Bookmarks=38,39,77,78,784,563,785,564,420,458,459,461,462,104,105,106,847,848,849
 Encoding=UTF-8
 Highlighting=LaTeX
 Indentation Mode=normal
