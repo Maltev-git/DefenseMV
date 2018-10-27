@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=style/header.tex
+lastDocument=defense.tex
 masterDocument=
 name=defense
 pkg_extIsRegExp=false
@@ -17,7 +17,7 @@ MakeIndex=
 QuickBuild=
 
 [document-settings,item:defense.tex]
-Bookmarks=74,38,75,39,4,46,47,867,868,869,582,435,583,436,104,474,105,475,477
+Bookmarks=138,4,41,42,553,505,658,931,506,659,268,881,49,50
 Encoding=UTF-8
 Highlighting=LaTeX
 Indentation Mode=normal
@@ -49,30 +49,30 @@ order=-1
 
 [item:defense.tex]
 archive=true
-column=0
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=159
+line=157
 mode=LaTeX
 open=true
 order=0
 
 [item:outsourced_parts/bibitems.tex]
 archive=true
-column=1
+column=44
 encoding=UTF-8
 highlight=LaTeX
-line=91
+line=11
 mode=LaTeX
 open=true
 order=2
 
 [item:style/header.tex]
 archive=true
-column=36
+column=40
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=23
 mode=LaTeX
 open=true
 order=1
@@ -88,19 +88,19 @@ open=false
 order=-1
 
 [view-settings,view=0,item:defense.tex]
-CursorColumn=0
-CursorLine=159
+CursorColumn=2
+CursorLine=157
 JumpList=
-ViMarks=.,144,0,[,144,0,],144,0,a,436,0,b,39,0,c,435,0,d,436,0,e,436,0,f,436,0,g,436,0,h,475,0,i,478,0,j,436,0,k,4,0,l,38,0,m,869,0,n,868,40,o,75,0,p,74,0,q,104,0,r,105,0,s,582,0,t,583,0,u,474,0,v,477,0,w,807,0,x,807,0,y,867,0,z,436,0
+ViMarks=.,157,0,[,157,0,],157,0,a,506,0,b,42,0,c,505,0,d,506,0,e,506,0,f,506,0,g,506,0,h,554,0,i,557,0,j,506,0,k,4,0,l,41,0,m,933,0,n,932,40,o,111,0,p,111,0,q,138,0,r,140,0,s,658,0,t,659,0,u,553,0,v,556,0,w,881,0,x,881,0,y,931,0,z,506,0
 
 [view-settings,view=0,item:outsourced_parts/bibitems.tex]
-CursorColumn=1
-CursorLine=91
+CursorColumn=44
+CursorLine=11
 JumpList=
-ViMarks=.,96,0,[,96,0,],96,0
+ViMarks=.,5,0,[,5,0,],5,0
 
 [view-settings,view=0,item:style/header.tex]
-CursorColumn=36
-CursorLine=1
+CursorColumn=40
+CursorLine=23
 JumpList=
-ViMarks=.,1,36,[,1,36,],1,36
+ViMarks=.,23,0,[,23,0,],23,0
