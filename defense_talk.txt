@@ -8,32 +8,50 @@ conclusions 2: 14:50 -> 14:19
 
 ### talk
 > title slide
-Thank you for the introduction... (including the defense committee members)
+Thank you for the introduction, Volker!
 
-Welcome to my defense! I am happy that you all came, in particular to see so many familiar faces. I probably share my nervousness with my family and some of my close friends ;)
+Welcome to my defense! I am happy to see you all here today. In particular to see so many familiar faces from far away. I probably share my nervousness with my family and some of my close friends ;)
 
-First, I thank the six members of the examination board for kindly agreeing to evaluate my defense performance (name them in case VB forgot).
+First, I thank the six members of the examination board for kindly agreeing to evaluate my defense performance. These are: (name them in case VB forgot).
 
-Today I will present to you the studies I included in my thesis and after that defend my thesis against critical questions.
+Now, I will present to you the studies I included in my thesis and after that I will defend my thesis against critical questions.
 
 
 > two topics
-% "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
-You can already see from the title of my thesis that it consists of two major parts. Both parts are focused on different aspects of the solar wind.
+The title of my thesis goes:
+"The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
+You can already see from the title that my thesis consists of two major parts. Both parts are focused on different aspects of the solar wind.
 
-The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models for estimating the magnitude of geomagnetic disturbances that are caused by solar wind and coronal mass ejections.
+The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models that estimate the average geomagnetic activity caused by specific solar wind properties. These are the solar wind electric field, the velocity of coronal mass ejections and the velocity of solar wind streams.
 
-The second part develops a solar wind model for the inner heliosphere. This study also predicts the near-Sun solar wind which the Parker Solar Probe spacecraft is flying into during its mission.
+The second part develops a solar wind model for the inner heliosphere. This study also extrapolates the model to the near-Sun region in order to predict the solar wind environment the Parker Solar Probe spacecraft is flying into during its mission.
 
 
 > contents
-In this talk, I will briefly present both parts and describe the studies I performed. However, I have half an hour, so I will only describe the methods and results of one study in greater detail. That is, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August and its first perihelion will occur 5 days from now -- next Tuesday.
+In this talk, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August this year and its first perihelion will occur 5 days from now -- next Tuesday.
 
-I still begin with introducing the solar wind and some of its major properties that are of relevance for this work.
+I still begin with introducing the solar activity and solar wind.
 
 
-> solar wind slides
+> introduction
+Solar activity
+This is an image of the Sun taken yesterday. There is not much to see.
+This is an image of the Sun taken in 2013. There are some spots on it.
+These are called sunspots. If you are a curious person, you can count the number of spots every day. In 1843 it was discovered that the sunspot number has a periodicity of 11~years. This period is called a solar cycle.
+This diagram plots the monthly sunspot number of the last 6 solar cycles. You can see that the amplitude varies by more than a factor of two.
+
+Sunspots are caused by strong magnetic flux that emerges on the solar surface. This flux locally inhibits the convection and leads to lower temperature and brightness.
+
+So the sunspot number is a measure for the activity of the outer solar magnetic field.
+The magnetic field dominates the structure and dynamics of the plasma in the solar atmosphere.
+
+The sunspot number is commonly used as a measure for solar activity.
+
+
 Solar wind
+
+In 1958 Eugene Parker formulated a theoretical model of an expanding isothermal solar atmosphere.
+
 
 Solar wind is a continuous outflow of magnetized plasma that is emitted by the Sun into space. It consists mainly of electrons and protons -- with a helium share that varies around 5 % and traces of heavier ions.
 
