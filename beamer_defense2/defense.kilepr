@@ -17,7 +17,7 @@ MakeIndex=
 QuickBuild=
 
 [document-settings,item:defense.tex]
-Bookmarks=138,4,41,42,553,505,658,931,506,659,268,881,49,50
+Bookmarks=148,4,41,42,599,119,600,603,49,50,757,980,281,549,1030,1031,146
 Encoding=UTF-8
 Highlighting=LaTeX
 Indentation Mode=normal
@@ -49,10 +49,10 @@ order=-1
 
 [item:defense.tex]
 archive=true
-column=2
+column=44
 encoding=UTF-8
 highlight=LaTeX
-line=157
+line=75
 mode=LaTeX
 open=true
 order=0
@@ -88,10 +88,10 @@ open=false
 order=-1
 
 [view-settings,view=0,item:defense.tex]
-CursorColumn=2
-CursorLine=157
+CursorColumn=44
+CursorLine=75
 JumpList=
-ViMarks=.,157,0,[,157,0,],157,0,a,506,0,b,42,0,c,505,0,d,506,0,e,506,0,f,506,0,g,506,0,h,554,0,i,557,0,j,506,0,k,4,0,l,41,0,m,933,0,n,932,40,o,111,0,p,111,0,q,138,0,r,140,0,s,658,0,t,659,0,u,553,0,v,556,0,w,881,0,x,881,0,y,931,0,z,506,0
+ViMarks=.,75,9,[,75,9,],75,43,a,550,0,b,42,0,c,549,0,d,550,0,e,550,0,f,550,0,g,550,0,h,600,0,i,603,0,j,550,0,k,4,0,l,41,0,m,1032,0,n,1031,40,o,119,0,p,119,0,q,146,0,r,148,0,s,757,0,t,758,0,u,599,0,v,602,0,w,980,0,x,980,0,y,1030,0,z,550,0
 
 [view-settings,view=0,item:outsourced_parts/bibitems.tex]
 CursorColumn=44

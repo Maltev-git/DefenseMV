@@ -1,0 +1,93 @@
+set terminal pdfcairo enhanced font "arial,12" fontscale 0.5 lw 1 size 18cm,9cm rounded
+set output "Helios12_orbits_ecliptic_polar.pdf"
+
+datafile = "datafile.txt"
+datafile_trajectory = "/home/raid0/mvenzmer/Desktop/astro70/data/spacecraft/Helios/traj_h12_combined.txt"
+
+Rsun=0.0047	#Rsun in au
+
+####--  Style  --####
+set style line 1 lw 1 lc rgb "white"
+set style line 2 lw 1 lc rgb "light-red"
+set style line 3 lw 1 lc rgb "web-green"
+set style line 4 lw 1 lc rgb "web-blue"
+set style line 5 lw 1 lc rgb "orange"
+set style line 6 lw 1 lc rgb "dark-orange"
+set style line 7 lw 1 lc rgb "skyblue"
+set style line 8 lw 1 lc rgb "dark-blue"
+set style line 9 lw 1 lc rgb "dark-magenta"
+set style line 10 lw 1 lc rgb "black"
+set style line 11 lw 1 lc rgb "gray"
+set style line 12 lw 1 lc rgb "gray50"
+
+set style fill solid 1.0 border -1
+
+	# title "Helios trajectories"
+set multiplot\
+	layout 1,2\
+	margins 0.002,0.998,0.055,0.998\
+	spacing 0.04
+
+####--  Key  --####
+set key vert left top reverse Left box opaque
+set key samplen 2
+set key width -1
+#unset key
+
+set border 0
+unset xtics
+unset ytics
+set angles degrees
+set polar
+set grid polar
+set size ratio -1
+
+
+set xlabel "Heliographic longitude"
+#set ylabel ""
+set rtics 0.25
+set rtics add("0.5\n[au]" 0.5)
+set rrange [0:1]
+#set xrange [0:1]
+#set yrange [-0.3:0.3]
+
+set label at -0.75,0.55 " flight direction" front
+set arrow from -0.4,0.5 to -0.5,0.4 ls 10 lw 2
+
+plot\
+	'-' using 1:2:(sprintf("%g°",$1)) with labels notitle tc ls 10,\
+	datafile_trajectory using 11:10 title "Helios 1" with lines ls 2 lw 2,\
+	datafile_trajectory using 26:25 title "Helios 2" with lines ls 3 lw 2,\
+	NaN notitle
+	90	0.92
+	180	0.9
+	270	0.92
+	e
+unset label
+unset arrow
+unset key
+
+#set object circle at 0,0 size Rsun fc rgb "yellow"
+#set label "N" font ",11" at 0,0.1
+#set label "S" font ",11" at 0,-0.1
+set arrow from 0,0 to cos(7.25)*1,sin(7.25)*1 nohead ls 11 dt 2
+set arrow from 0,0 to cos(7.25)*1,sin(7.25)*-1 nohead ls 11 dt 2
+set label "7.25°" font ",11" at 0.9,0.14
+set label "-7.25°" font ",11" at 0.9,-0.145
+
+set xlabel "Heliographic latitude" offset -19,0
+
+set xrange [0:1]
+set yrange [-0.5:0.5]
+plot\
+	'-' using 1:2:(sprintf("%g°",$1)) with labels notitle tc ls 10,\
+	datafile_trajectory using 12:10 title "Helios 1" with lines ls 2 lw 2,\
+	datafile_trajectory using 27:25 title "Helios 2" with lines ls 3 lw 2,\
+	NaN notitle
+	90	0.46
+	60	0.46
+	30	0.45
+	-90	0.46
+	-60	0.46
+	-30	0.45
+	e

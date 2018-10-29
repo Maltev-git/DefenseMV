@@ -8,10 +8,10 @@
 \subtitle{Predictive models for space weather and for the Parker Solar Probe orbit}
 % \title[Solar wind]{Empirical solar wind model for the inner heliosphere}
 % \subtitle{Predictions for the Parker Solar Probe orbit}
-\author[MV]{PhD defense by\\\textit{Malte Venzmer}}
+\author[MV]{PhD defense by \textit{Malte Venzmer}}
 \institute[IAG]{
 	\begin{columns}[c]
-	\column{0.1\textwidth}
+% 	\column{0.1\textwidth}
 	\column{0.4\textwidth}
 
 		PhD student\\
@@ -21,8 +21,8 @@
 		Institute for Astrophysics\\
 		Georg-August-Universität Göttingen
 
-	\column{0.1\textwidth}
-	\column{0.4\textwidth}
+% 	\column{0.1\textwidth}
+	\column{0.6\textwidth}
 
 		\underline{Examination board members}\\
 		Dr. Volker Bothmer (supervisor, referee)\\
@@ -32,10 +32,10 @@
 		Prof. Dr. Hardi Peter\\
 		Prof. Dr. Andreas Tilgner
 	\end{columns}
-	\vspace*{0.2cm}
+	\vspace*{0.1cm}
 }
 % \date{\today}
-\date[2018]{Thursday, 1 November 2018, 14:00\\Seminarraum Astrophysik (SR 17, F 05.104)}
+\date[2018]{\scriptsize Thursday, 1 November 2018, 14:00}%\\Seminarraum Astrophysik (SR 17, F 05.104)}
 \subject{Solar wind}
 % \logo{\includegraphics[height=1cm]{../talk_figures/IAG_LogoRGB.png}}
 
@@ -50,10 +50,16 @@
 
 \section{Title}
 
-\frame[plain]{\titlepage}
+{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
+\frame[plain]{
+	\vspace{5mm}
+	
+	\titlepage
+	\includegraphics[height=8mm]{../talk_figures/IAG_LogoRGB.png}\hfill \includegraphics[height=8mm]{../talk_figures/Logo_Uni_Goett_1200dpi_rgb.png}\hfill ~
+}
+}
 
 \begin{frame}[plain,c]{The two studies in my thesis}{}
-	Thesis title:
 	\begin{block}{}
 		\color{blue} \centering \Large The solar wind's geomagnetic impact and its Sun–Earth evolution\\
 		\large Predictive models for space weather and for the Parker Solar Probe orbit
@@ -62,18 +68,18 @@
 	\begin{columns}[t]
 	\column{0.5\textwidth}
 		
-		\begin{block}<2->{Geomagnetic impact of the solar wind}
+		\begin{block}<2->{\color<4->{gray} Geomagnetic impact of the solar wind} \color<4->{gray}
 			I derived relations to predict geomagnetic activity from
-			\begin{itemize}
-				\item Solar wind electric field
-				\item Velocity of coronal mass ejections
-				\item Velocity of solar wind streams
+			\begin{itemize} \color<4->{gray}
+				\item[\textcolor<4->{gray}{\textbullet}] Solar wind electric field
+				\item[\textcolor<4->{gray}{\textbullet}] Velocity of coronal mass ejections
+				\item[\textcolor<4->{gray}{\textbullet}] Velocity of solar wind streams
 			\end{itemize}
 		\end{block}
 		
 	\column{0.5\textwidth}
 		
-		\begin{block}<2->{Empirical solar wind model}
+		\begin{block}<3->{Empirical solar wind model}
 			I use existing solar wind data to derive
 			\begin{itemize}
 				\item Solar wind model for the inner heliosphere
@@ -85,29 +91,31 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}[c]{Contents}{}
+{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
+\begin{frame}[c]{}{}
 	\begin{columns}[c]
 	\column{0.1\textwidth}
 
 	\column{0.9\textwidth}
 		
-		\large Introduction
+		\Large
 		\begin{itemize}
-			\item Solar activity
-			\item Solar wind
-			\item Parker Solar Probe (PSP)
-		\end{itemize}
-		\large Empirical solar wind model
-		\begin{itemize}
-			\item Solar wind model
-			\item Prediction to PSP orbit
-			\item Comparison with other studies
+			\item Introduction
+			\begin{itemize}
+				\item \large Solar activity
+				\item Solar wind
+				\item Parker Solar Probe (PSP)
+			\end{itemize}
+			\item Empirical solar wind model
+			\begin{itemize}
+				\item \large Solar wind model
+				\item Prediction for PSP orbit
+			\end{itemize}
 			\item Summary
-			\item Outlook
 		\end{itemize}
-		
 	\end{columns}
 \end{frame}
+}
 
 % \begin{frame}[plain,c]{Geomagnetic impact of the solar wind}{}
 % 	Solar wind -- solar system bodies\\
@@ -143,11 +151,11 @@
 	\begin{columns}[c]
 	\column{0.3\textwidth}
 		
-		\includegraphics[width=0.96\textwidth]{../talk_figures/latest_2048_HMIIC.jpg}
-		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 26 October 2018}
-		\pause
 		\includegraphics[width=0.96\textwidth]{../talk_figures/20130516_170000_1024_HMIIC.jpg}
 		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 16 May 2013}
+		\pause
+		\includegraphics[width=0.96\textwidth]{../talk_figures/latest_2048_HMIIC.jpg}
+		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 26 October 2018}
 		
 	\column<3>{0.7\textwidth}
 		
@@ -162,37 +170,44 @@
 
 \begin{frame}[plain,c]{Solar wind}{}
 	\begin{columns}[c]
-	\column{\textwidth}
+	\column{0.5\textwidth}
 		
-		- E.~Parker's theoretical model \citep{Parker1958}\\
-		- Confirmation by in-situ measurements in 1959\\
-		- Monitored continuously near Earth since\\\ \\
-% 		\hspace*{-20pt}
-% 		\includegraphics[width=0.7\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc_wosc.pdf}
-% 		\captionoftiny{figure}{\centering Credit: Malte Venzmer, 2018}
+		Solar wind
+		\begin{itemize}
+			\item Theoretical model \citep{Parker1958}:\\
+				Expanding isothermal solar atmosphere
+			\item In-situ measurements confirmed existence in 1959
+			\item Monitored continuously near Earth since 1963
+			\item Composition
+		\end{itemize}
+		
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
 		
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Solar wind}{}
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
-	\captionoftiny{figure}{\centering Credit: Venzmer, PhD thesis}
+	
 \end{frame}
 \begin{frame}[plain,c]{Solar wind}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
-		Solar wind -- solar system bodies\\\ 
-
+		
 		Measured in-situ throughout the heliosphere:
 		\begin{itemize}
-			\item Voyager -- heliopause
-			\item Ulysses -- high heliolatitudes
-			\item Helios -- Mercury
+			\item<2-> Voyager 1 \& 2 -- out to heliopause (\SIrange{1}{120}{\au})
+			\item<3-> Helios 1 \& 2 -- down to Mercury (\SIrange{0.29}{0.98}{\au})
+			\item<4-> Ulysses -- up to high heliolatitudes (\SI{+-79}{\degree})
 		\end{itemize}
 		
 	\column{0.5\textwidth}
 		
-		image here...
+		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
+		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
+		\includegraphics<4>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
 
 	\end{columns}
 \end{frame}
@@ -213,6 +228,31 @@
 			\item Solar wind acceleration
 		\end{itemize}
 		
+	\end{columns}
+\end{frame}
+
+\begin{frame}[plain,c]{Parker Solar Probe}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		Parker Solar Probe mission to fly within 10\,\Rs{} of the Sun\\\ 
+		
+		Primary goals \citep{Fox2015}:
+		\begin{itemize}
+			\item Trace flow of energy that heats and accelerates the corona and solar wind
+			\item Determine the structure and dynamics of the plasma and magnetic fields at the sources of the solar wind
+			\item Explore the mechanisms that accelerate and transport solar energetic particles
+		\end{itemize}
+		\vspace{5mm}
+		\begin{block}<2>{Scientific instruments}
+			\begin{itemize}
+				\item FIELDS -- Electromagnetic Fields Investigation
+				\item IS\sun{}IS -- Integrated Science Investigation of the Sun
+				\item SWEAP -- Solar Wind Electrons Alphas and Protons Investigation
+				\item WISPR -- Wide-Field Imager for Solar Probe
+			\end{itemize}
+		\end{block}
+
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Parker Solar Probe}{}
@@ -238,35 +278,37 @@
 		\end{block}
 	\end{columns}
 \end{frame}
-\begin{frame}[plain,c]{Parker Solar Probe}{}
-	\begin{columns}[c]
-	\column{\textwidth}
-		
-% 		\begin{block}{
-		PSP mission primary goals \citep{Fox2015}:
-			\begin{itemize}
-				\item Trace flow of energy that heats and accelerates the corona and solar wind
-				\item Determine the structure and dynamics of the plasma and magnetic fields at the sources of the solar wind
-				\item Explore the mechanisms that accelerate and transport solar energetic particles
-			\end{itemize}
-% 		\end{block}
-		\vspace{5mm}
-		\begin{block}<2>{Scientific instruments}
-			\begin{itemize}
-				\item FIELDS -- Electromagnetic Fields Investigation
-				\item IS\sun{}IS -- Integrated Science Investigation of the Sun
-				\item SWEAP -- Solar Wind Electrons Alphas and Protons Investigation
-				\item WISPR -- Wide-Field Imager for Solar Probe
-			\end{itemize}
-		\end{block}
-
-	\end{columns}
-\end{frame}
 
 
 \section{Empirical solar wind model}
 
-\begin{frame}[plain,c]{Solar wind model}{}
+c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
+\begin{frame}[c]{}{}
+	\begin{columns}[c]
+	\column{0.1\textwidth}
+
+	\column{0.9\textwidth}
+		
+		\Large
+		\begin{itemize}
+			\item \color{gray} Introduction
+			\begin{itemize} \color{gray}
+				\item \large Solar activity
+				\item Solar wind
+				\item Parker Solar Probe (PSP)
+			\end{itemize} \color{black}
+			\item Empirical solar wind model
+			\begin{itemize}
+				\item \large Solar wind model
+				\item Prediction for PSP orbit
+			\end{itemize}
+			\item Summary
+		\end{itemize}
+	\end{columns}
+\end{frame}
+}
+
+\begin{frame}[plain,c]{Empirical solar wind model}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
@@ -306,7 +348,10 @@
 
 	\column<2>{0.3\textwidth}
 		
-		2018: solar minimum\\
+		Perihelion \#1\\
+		2018: solar minimum\\\ 
+		
+		Perihelion \#22\\
 		2024: solar maximum
 
 	\end{columns}
@@ -322,7 +367,7 @@
 		- hourly data since 1963\\
 		\centering
 		\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/timeline_OMNI_SC_IDs.pdf}
-		\captionoftiny{figure}{\centering Credit: Venzmer, PhD thesis}
+		
 		
 	\end{columns}
 \end{frame}
@@ -336,7 +381,7 @@
 		- hourly data from 1974--1981\\\ 
 		
 		\includegraphics[width=0.8\textwidth]{../talk_figures/Helios12_orbits_ecliptic.png}
-		\captionoftiny{figure}{\centering Credit: Venzmer, PhD thesis}
+		
 % 		\includegraphics[width=0.1\textwidth]{../figures_of_others/images/helios2.jpg}
 % 		\captionoftiny{figure}{Credit: \href{https://solarsystem.nasa.gov/missions/helios-1/in-depth/}{NASA}}
 
@@ -358,7 +403,6 @@
 		\vspace{5mm}
 		\hspace*{-30pt}
 		\includegraphics[width=1.2\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc.pdf}
-		\captionoftiny{figure}{\centering Credit: Malte Venzmer, 2018}
 		
 	\end{columns}
 \end{frame}
@@ -441,7 +485,7 @@
 		Perihelion \#1\\\ 
 		
 		\includegraphics[width=\textwidth]{../talk_figures/SPP_perihelia_prediction_f_defense.pdf}
-		\captionoftiny{figure}{\centering Credit: Malte Venzmer, 2018}
+		
 		
 		November 2018
 
@@ -466,7 +510,7 @@
 		Perihelion \#22 (first closest)\\\ 
 		
 		\includegraphics[width=\textwidth]{../talk_figures/SPP_perihelia_prediction_nearest_f_defense.pdf}
-		\captionoftiny{figure}{\centering Credit: Malte Venzmer, 2018}
+		
 		
 		December 2024
 		
@@ -496,7 +540,7 @@
 			\end{align*}
 		\end{block}
 
-	\column<2->{0.65\textwidth}
+	\column<+->{0.65\textwidth}
 
 		\begin{itemize}[<+->]
 			\item Magnetic field values are consistent with theoretical models \citep{Parker1958,Banaszkiewicz1998}
@@ -511,11 +555,11 @@
 	\begin{columns}[c]
 	\column<+->{\textwidth}
 	
-	Remote observations show the limits of the extrapolation
+		Remote observations show the limits of the extrapolation
 
-	\begin{block}{Velocity and temperature are overestimated}
-		\centering $\Rightarrow$ Solar wind is still being heated and accelerated up to 20\,\Rs{}
-	\end{block}
+		\begin{block}{Velocity and temperature are overestimated}
+			\centering $\Rightarrow$ Solar wind is still being heated and accelerated up to 20\,\Rs{}
+		\end{block}
 	
 	\end{columns}
 \end{frame}
@@ -543,9 +587,11 @@
 	\end{itemize}
 	
 \end{frame}
-\begin{frame}[plain,c]{Outlook}{}
+
+{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
+\begin{frame}[plain,t]{Outlook}{}
 	\begin{columns}[c]
-	\column{\textwidth}
+	\column{0.8\textwidth}
 		
 		\begin{itemize}
 			\item Possible modifications to model (e.g., flux conservation)
@@ -553,12 +599,16 @@
 			\item Parker Solar Probe measurements can be used to validate the extrapolations
 		\end{itemize}
 		
-		\vspace{1cm}
+		\vspace{2cm}
 		
 		\action<2>{\centering\LARGE\color{blue} Thank you!}
 		
+	\column{0.2\textwidth}
+		
+		
 	\end{columns}
 \end{frame}
+}
 
 \begin{frame}[t,allowframebreaks]{References}
 	\tiny
@@ -602,6 +652,55 @@
 \begin{frame}[plain,c]{Solar wind}{}
 	\centering
 	\includegraphics[width=0.7\textwidth]{../talk_figures/ace_realtime_ap_plot.png}
+\end{frame}
+\begin{frame}[plain,c]{Solar surface and atmosphere}{}
+	\begin{columns}[c]
+	\column{0.228\textwidth}
+		
+		\centering \small Intensitygram
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_1024_HMIIC.jpg}
+		\captionoftiny{figure}{Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 16 May}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20181028_120000_1024_HMIIC.jpg}
+		\captionoftiny{figure}{Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 28 Oct}
+
+	\column{0.228\textwidth}
+		
+		\centering \small Magnetogram
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_1024_HMIB.jpg}
+		\captionoftiny{figure}{ 2013}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20181028_120000_1024_HMIB.jpg}
+		\captionoftiny{figure}{ober 2018}
+		
+	\column{0.228\textwidth}
+		
+		\centering \small \SI{304}{\AA} \color{white}{g}
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170044_1024_0304.jpg}
+		\captionoftiny{figure}{Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/AIA}, 16 May}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20181028_115918_1024_0304.jpg}
+		\captionoftiny{figure}{Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/AIA}, 28 Octo}
+		
+	\column{0.228\textwidth}
+	
+		\centering \small \SI{171}{\AA} \color{white}{g}
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170048_1024_0171.jpg}
+		\captionoftiny{figure}{ 2013}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20181028_115634_1024_0171.jpg}
+		\captionoftiny{figure}{ber 2018}
+		
+	\column{0.228\textwidth}
+	
+		\centering \small \SI{193}{\AA} \color{white}{g}
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170119_1024_0193.jpg}
+		\captionoftiny{figure}{~}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20181028_115553_1024_0193.jpg}
+		\captionoftiny{figure}{~}
+		
+	\end{columns}
 \end{frame}
 
 \begin{frame}[plain,c]{Solar magnetic field}{}
