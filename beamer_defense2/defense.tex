@@ -159,12 +159,31 @@
 		
 	\column<3>{0.7\textwidth}
 		
-		In 1843 the 11-year periodicity was discovered\\\ 
+		11-year sunspot number cycle\\\ 
 		\includegraphics[width=\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
 % 		\captionoftiny{figure}{\centering Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
 
 		\vfill\hfill \hyperlink{butterfly}{\beamerskipbutton{}}
 		
+	\end{columns}
+\end{frame}
+\begin{frame}[plain,c]{Solar activity}{}
+	\begin{columns}[c]
+	\column{0.41\textwidth}
+		
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_4096_HMIIC_half.jpg}\\
+		\pause
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_4096_HMIB_half.jpg}\\
+		\pause
+		\includegraphics[width=\textwidth]{../talk_figures/20130516_170048_4096_0171_half.jpg}
+		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI and SDO/AIA}, 16 May 2013}
+		\pause
+		
+	\column{0.59\textwidth}
+		
+		\includegraphics[width=0.9\textwidth]{../talk_figures/TSE_2017_500mm_Mackay.png}
+		\captionoftiny{figure}{Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Marcel Bělík, Radovan Mrllák, Shadia Habbal}, 2017}
+
 	\end{columns}
 \end{frame}
 
@@ -174,16 +193,19 @@
 		
 		Solar wind
 		\begin{itemize}
-			\item Theoretical model \citep{Parker1958}:\\
-				Expanding isothermal solar atmosphere
-			\item In-situ measurements confirmed existence in 1959
-			\item Monitored continuously near Earth since 1963
-			\item Composition
+			\item Theoretical model \citep{Parker1958}
+			\begin{itemize}
+				\item Expanding isothermal solar atmosphere
+				\item Parker spiral field geometry
+			\end{itemize}
+			\item<3-> In-situ measurements confirmed its existence in 1959
+			\item<3-> Monitored continuously near Earth since
 		\end{itemize}
 		
-	\column{0.5\textwidth}
+	\column<2->{0.5\textwidth}
 		
-		\includegraphics[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
+		\includegraphics[width=\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
+		\captionoftiny{figure}{Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
 		
 	\end{columns}
 \end{frame}
@@ -205,6 +227,7 @@
 		
 	\column{0.5\textwidth}
 		
+		\includegraphics<1>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
 		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
 		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
 		\includegraphics<4>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
@@ -224,7 +247,7 @@
 		
 		The near-Sun region is of special scientific interest:\\
 		\begin{itemize}
-			\item Coronal heating
+			\item Coronal heating problem
 			\item Solar wind acceleration
 		\end{itemize}
 		
@@ -282,7 +305,7 @@
 
 \section{Empirical solar wind model}
 
-c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
+{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\paperwidth]{../talk_figures/latest_4096_0304_transparent_cropped.png}}
 \begin{frame}[c]{}{}
 	\begin{columns}[c]
 	\column{0.1\textwidth}
@@ -325,8 +348,10 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 
 	\column<2>{0.5\textwidth}
 		
-		Model concept:\\
-		Frequency distributions shifted according to solar activity and solar distance\\
+		Concept of the model:\\
+		Frequency distributions shifted according to solar activity and solar distance
+		\vspace{5mm}
+		
 		\begin{block}{Solar wind key parameters}
 			\begin{itemize}
 				\item Magnetic field strength
@@ -346,7 +371,7 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 
-	\column<2>{0.3\textwidth}
+	\column{0.3\textwidth}
 		
 		Perihelion \#1\\
 		2018: solar minimum\\\ 
@@ -385,9 +410,12 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 % 		\includegraphics[width=0.1\textwidth]{../figures_of_others/images/helios2.jpg}
 % 		\captionoftiny{figure}{Credit: \href{https://solarsystem.nasa.gov/missions/helios-1/in-depth/}{NASA}}
 
-	\column<2>{0.5\textwidth}
+	\column<2->{0.5\textwidth}
 		
-		\begin{block}{Solar wind model data use}
+		\hspace*{-30pt}
+		\includegraphics[width=1.2\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc.pdf}
+		\vspace{5mm}
+		\begin{block}<3->{Solar wind model data use}
 			\begin{itemize}
 				\item 53 years of hourly near-Earth OMNI data to derive
 				\begin{itemize}
@@ -400,9 +428,6 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 				\end{itemize}
 			\end{itemize}
 		\end{block}
-		\vspace{5mm}
-		\hspace*{-30pt}
-		\includegraphics[width=1.2\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc.pdf}
 		
 	\end{columns}
 \end{frame}
@@ -429,6 +454,7 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
+		Hourly OMNI data from 1963 to 2016\\\ 
 		\hspace*{-10pt}
 		\includegraphics[width=1.1\textwidth]{../talk_figures/SW_SSN_plot.png}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
@@ -469,61 +495,61 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_top.png}
 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
 
-	\column<2>{0.5\textwidth}
+	\column{0.5\textwidth}
 	
 		\hspace*{-10pt}
 		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_bottom.png}
-		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
+% 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
 		
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Prediction for PSP orbit}{}
 	\begin{columns}[c]
-	\column{0.6\textwidth}
+	\column{\textwidth}
 		
 		\centering
 		Perihelion \#1\\\ 
 		
-		\includegraphics[width=\textwidth]{../talk_figures/SPP_perihelia_prediction_f_defense.pdf}
+		\includegraphics[width=0.7\textwidth]{../talk_figures/SPP_perihelia_prediction_f_defense.pdf}
 		
 		
 		November 2018
 
-	\column<2>{0.35\textwidth}
-		
-		\begin{block}{\centering Predicted values at 36.7~\Rs}
-			\begin{align*}
-				B &= \SI{94}{\nano\tesla}\\
-				v &= \SI{340}{\km\per\s}\\
-				n &= \SI{214}{\per\cm\cubed}\\
-				T &= \SI{5.03e5}{\kelvin}
-			\end{align*}
-		\end{block}
+% 	\column<2>{0.35\textwidth}
+% 		
+% 		\begin{block}{\centering Predicted values at 36.7~\Rs}
+% 			\begin{align*}
+% 				B &= \SI{94}{\nano\tesla}\\
+% 				v &= \SI{340}{\km\per\s}\\
+% 				n &= \SI{214}{\per\cm\cubed}\\
+% 				T &= \SI{5.03e5}{\kelvin}
+% 			\end{align*}
+% 		\end{block}
 	
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Prediction for PSP orbit}{}
 	\begin{columns}[c]
-	\column{0.6\textwidth}
+	\column{\textwidth}
 		
 		\centering
 		Perihelion \#22 (first closest)\\\ 
 		
-		\includegraphics[width=\textwidth]{../talk_figures/SPP_perihelia_prediction_nearest_f_defense.pdf}
+		\includegraphics[width=0.7\textwidth]{../talk_figures/SPP_perihelia_prediction_nearest_f_defense.pdf}
 		
 		
 		December 2024
 		
-	\column<2>{0.35\textwidth}
-		
-		\begin{block}{\centering Predicted values at 9.86\,\Rs}
-			\begin{align*}
-				B &= \SI{1241}{\nano\tesla}\\
-				v &= \SI{290}{\km\per\s}\\
-				n &= \SI{2951}{\per\cm\cubed}\\
-				T &= \SI{1.93e6}{\kelvin}
-			\end{align*}
-		\end{block}
+% 	\column<2>{0.35\textwidth}
+% 		
+% 		\begin{block}{\centering Predicted values at 9.86\,\Rs}
+% 			\begin{align*}
+% 				B &= \SI{1241}{\nano\tesla}\\
+% 				v &= \SI{290}{\km\per\s}\\
+% 				n &= \SI{2951}{\per\cm\cubed}\\
+% 				T &= \SI{1.93e6}{\kelvin}
+% 			\end{align*}
+% 		\end{block}
 		
 	\end{columns}
 \end{frame}
@@ -544,7 +570,7 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 
 		\begin{itemize}[<+->]
 			\item Magnetic field values are consistent with theoretical models \citep{Parker1958,Banaszkiewicz1998}
-			\item Studies reveal slow wind velocities of \SI{200}{\km\per\s} \citep{Sheeley1997,Wang2000}
+			\item Remote studies reveal slow wind velocities of \SI{200}{\km\per\s} \citep{Sheeley1997,Wang2000}
 			\item Density values agree well with radio burst observations \citep{Leblanc1998}
 			\item Near-Sun coronal temperatures yield \SIrange{2}{3}{\mega\kelvin} \citep{Billings1959,Liebenberg1975}
 		\end{itemize}
@@ -555,10 +581,12 @@ c{\usebackgroundtemplate{\hspace*{115mm}\vspace*{0mm}\includegraphics[width=\pap
 	\begin{columns}[c]
 	\column<+->{\textwidth}
 	
-		Remote observations show the limits of the extrapolation
-
-		\begin{block}{Velocity and temperature are overestimated}
-			\centering $\Rightarrow$ Solar wind is still being heated and accelerated up to 20\,\Rs{}
+		\begin{block}{Extrapolation results \citep{Venzmer2018}}
+			\begin{itemize}
+				\item Remote observations show the limits of the extrapolation
+				\item Velocity and temperature are overestimated
+				\item Solar wind is still being heated and accelerated in this region (up to 20\,\Rs{})
+			\end{itemize}
 		\end{block}
 	
 	\end{columns}

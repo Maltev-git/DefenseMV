@@ -1,7 +1,7 @@
 
 ### timing
 this: 20:30 min -> 17:24 min
-abstract: 11:15 -> 11:57
+abstract: 11:15 -> 11:57 -> 10:40
 intro: 21:30 -> 16:58
 conclusions 1: 14:26 -> 13:21
 conclusions 2: 14:50 -> 14:19
@@ -10,61 +10,77 @@ conclusions 2: 14:50 -> 14:19
 > title slide
 Thank you for the introduction, Volker!
 
-Welcome to my defense! I am happy to see you all here today. In particular to see so many familiar faces from far away. I probably share my nervousness with my family and some of my close friends ;)
+Welcome to my PhD defense! I am happy to see you all here. In particular to see the familiar faces that traveled from far places.  I probably share my nervousness with my family and some of my close friends ;)
 
-First, I thank the six members of the examination board for kindly agreeing to evaluate my defense performance. These are: (name them in case VB forgot).
+First, I want to thank the six members of the examination board for kindly agreeing to evaluate my performance today.  (in case VB forgot) I welcome:
+- VB, my PhD supervisor,
+- Ansgar Reiners, the second member of the thesis committee,
+- and the further members:
+- Stefan Dreizler,
+- Wolfram Kollatschny,
+- Andreas Tilgner, from the Institute for Geophysics,
+- and Hardi Peter, from the Max Planck Institute for Solar System Research.
 
-Now, I will present to you the studies I included in my thesis and after that I will defend my thesis against critical questions.
+
+Now, I will present one of the studies I included in my thesis and after that I will defend my thesis against critical questions.
 
 
 > two topics
-The title of my thesis goes:
-"The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
-You can already see from the title that my thesis consists of two major parts. Both parts are focused on different aspects of the solar wind.
+The title of my thesis goes: "The solar wind's geomagnetic impact and its Sun--Earth evolution -- Predictive models for space weather and for the Parker Solar Probe orbit".
+You can already see from the title, that my thesis consists of two major parts. Both parts are independent studies, that focus on different aspects of the solar wind.
 
-The first part deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models that estimate the average geomagnetic activity caused by specific solar wind properties. These are the solar wind electric field, the velocity of coronal mass ejections and the velocity of solar wind streams.
+The first study deals with the influence of the solar wind on the terrestrial magnetosphere. This study derives predictive models that estimate the average geomagnetic activity caused by specific solar wind parameters. These parameters are the solar wind electric field, the velocity of coronal mass ejections and the velocity of solar wind streams.
 
-The second part develops a solar wind model for the inner heliosphere. This study also extrapolates the model to the near-Sun region in order to predict the solar wind environment the Parker Solar Probe spacecraft is flying into during its mission.
+The second study develops an empirical solar wind model for the inner heliosphere. It further extrapolates the model to the near-Sun region, in order to predict the solar wind environment the Parker Solar Probe spacecraft will fly through during its mission.
 
-
-> contents
-In this talk, I focus on the second study, because it is a very current topic due to the recent launch of the Parker Solar Probe spacecraft in August this year and its first perihelion will occur 5 days from now -- next Tuesday.
-
-I still begin with introducing the solar activity and solar wind.
+In this talk, I will not address the study on geomagnetic impact of the solar wind but present the study on the solar wind model. The reason why I chose this one, is because it is a very current topic. The Parker Solar Probe spacecraft was launched in August and its first perihelion will occur 5 days from now -- next Tuesday.
 
 
-> introduction
-Solar activity
-This is an image of the Sun taken yesterday. There is not much to see.
-This is an image of the Sun taken in 2013. There are some spots on it.
-These are called sunspots. If you are a curious person, you can count the number of spots every day. In 1843 it was discovered that the sunspot number has a periodicity of 11~years. This period is called a solar cycle.
-This diagram plots the monthly sunspot number of the last 6 solar cycles. You can see that the amplitude varies by more than a factor of two.
-
-Sunspots are caused by strong magnetic flux that emerges on the solar surface. This flux locally inhibits the convection and leads to lower temperature and brightness.
-
-So the sunspot number is a measure for the activity of the outer solar magnetic field.
-The magnetic field dominates the structure and dynamics of the plasma in the solar atmosphere.
-
-The sunspot number is commonly used as a measure for solar activity.
+> outline
+the outline of the talk
+I will begin with a short introduction on solar activity, the solar wind and the Parker Solar Probe mission. After that, I will tell you how I built the solar wind model and what the resulting solar wind predictions for the PSP orbit are.
 
 
-Solar wind
+> solar activity
+This is an image of the Sun taken in 2013. There are lots of sunspots visible.
+This image of the Sun was taken three days ago (when I updated my slides) -- without sunspots.
 
-In 1958 Eugene Parker formulated a theoretical model of an expanding isothermal solar atmosphere.
+The number of sunspots shows a periodicity of 11 years. This solar cycle was discovered in 1843.
+In this plot you can see the monthly sunspot number since 1954. The amplitudes of the solar cycles are quite variable.
 
 
-Solar wind is a continuous outflow of magnetized plasma that is emitted by the Sun into space. It consists mainly of electrons and protons -- with a helium share that varies around 5 % and traces of heavier ions.
+> next slide
+[magnetogram figure]
+Sunspots are caused by strong magnetic flux that rises from the convection zone through the solar surface. This flux inhibits the convection locally and leads to a lower temperature and brightness of the photosphere.
 
-Near the Sun, the coronal plasma is still guided by the magnetic field lines. At a few solar radii distance from the Sun, the magnetic pressure drops below the thermal pressure and the magnetic field freezes in the plasma flow. This distance is called the source surface -- from here the solar wind streams radially away into space.
+The flux from sunspots contributes to the outer solar magnetic field. In the near-Sun solar atmosphere, the field dominates the structure and movements of the coronal plasma. That is, the plasma follows the lines of the magnetic field.
+[171AA figure]
 
-Due to the solar rotation with a period of about 27 days, the magnetic field of the solar wind is shaped in an Archimedean spiral pattern, called the Parker spiral. At the distance of Earth, the spiral angle is on average about 45 degrees.
+With increasing solar distance, the magnetic field gets weaker and eventually, at a distance of a few solar radii, the magnetic pressure falls below the thermal pressure of the plasma. The consequence is, that the magnetic field gets locked within the plasma. Now, the plasma can flow freely, carrying the solar magnetic field out into the heliosphere.
 
-The solar wind flows through the solar system until it interacts with the interstellar medium far beyond Pluto.
+The solar wind is this continuous outflow of magnetized plasma. It consists mainly of electrons and protons -- with a helium share that varies around 5 % and with traces of heavier ions.
+
+
+> solar wind
+In 1958, Parker formulated a theoretical model for an expanding solar atmosphere. He considered the consequences of the solar rotation, for the geometry of the magnetic field in the heliosphere. The field geometry is now called the "Parker spiral".
+[Parker spiral figure]
+
+The first satellites confirmed the existence of solar wind in 1959. Since then, the solar wind has been monitored almost continuously near Earth.
+
+
+
 
 - solar magnetic field (near-Sun field geometry, Parker spiral)
 - solar activity cycle (sunspots + Ulysses figure)
 - slow/fast wind (CH image and in-situ plot)
 - CMEs (coronagraph + in-situ plot + 3-part structure)
+
+
+[The ratio between thermal and magnetic pressure is called plasma beta.
+beta = p_therm / p_mag]
+[So the sunspot number is a measure for the activity of the outer solar magnetic field and commonly used as a measure for solar activity.]
+[This distance is called the source surface -- from here the solar wind streams radially away into space. Due to the solar rotation with a period of about 27 days, the magnetic field of the solar wind is shaped in an Archimedean spiral pattern, called the Parker spiral. At the distance of Earth, the spiral angle is on average about 45 degrees.]
+
 
 
 > first study slides
@@ -141,11 +157,13 @@ in terms of PSP: -> The model can be used as a guide for the classification of t
 why the use of probability distributions instead of averages?
 -> because this also provides the estimation for the possible extreme values
 
-why the focus exactly on these four solar wind parameters?
--> because many properties can be derived from these key parameters: beta, pressure, see paper...
+Why the focus exactly on these four solar wind parameters?
+-> they are the key quantities that describe a magnetized plasma
+-> many properties can be derived from these key parameters: plasma beta, pressures, and flux densities
 
 VB:
-- how do aurorae form?
+How do aurorae form?
+-> Geomagnetic substorms. Reconnections in the magnetotail release electrons and ions that follow the field lines to the polar footpoints. These particles excite atoms and molecules in the upper atmosphere (in particular oxygen and nitrogen), which emit the polar light.
 
 H. Peter:
 - why is it so difficult to predict the in-situ magnetic field of CMEs, even if the magnetic configuration of their source region is known?
