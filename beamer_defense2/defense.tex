@@ -210,27 +210,22 @@
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Solar wind}{}
-	\centering
-	\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
-	
-\end{frame}
-\begin{frame}[plain,c]{Solar wind}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
 		Measured in-situ throughout the heliosphere:
 		\begin{itemize}
-			\item<2-> Voyager 1 \& 2 -- out to heliopause (\SIrange{1}{120}{\au})
-			\item<3-> Helios 1 \& 2 -- down to Mercury (\SIrange{0.29}{0.98}{\au})
-			\item<4-> Ulysses -- up to high heliolatitudes (\SI{+-79}{\degree})
+			\item<.-> Voyager 1 \& 2 -- out to heliopause (\SIrange{1}{120}{\au})
+			\item<2-> Helios 1 \& 2 -- down to Mercury (\SIrange{0.29}{0.98}{\au})
+			\item<3-> Ulysses -- up to high heliolatitudes (\SI{+-79}{\degree})
 		\end{itemize}
 		
 	\column{0.5\textwidth}
 		
-		\includegraphics<1>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
-		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
-		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
-		\includegraphics<4>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
+% 		\includegraphics<.>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
+		\includegraphics<1>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
+		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
+		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
 
 	\end{columns}
 \end{frame}
@@ -260,11 +255,11 @@
 		
 		Parker Solar Probe mission to fly within 10\,\Rs{} of the Sun\\\ 
 		
-		Primary goals \citep{Fox2015}:
+		Primary goals are to investigate \citep{Fox2015}:
 		\begin{itemize}
-			\item Trace flow of energy that heats and accelerates the corona and solar wind
-			\item Determine the structure and dynamics of the plasma and magnetic fields at the sources of the solar wind
-			\item Explore the mechanisms that accelerate and transport solar energetic particles
+			\item the flow of energy that heats and accelerates the solar wind
+			\item the structure and dynamics at the sources of the solar wind
+			\item the mechanisms that accelerate and transport solar energetic particles
 		\end{itemize}
 		\vspace{5mm}
 		\begin{block}<2>{Scientific instruments}
@@ -335,24 +330,25 @@
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
-		Aim of this study:
+		The aim of this study is to predict the solar wind environment for the PSP orbit\\\ 
+		
+		Concept of the model:
 		\begin{itemize}
-			\item use existing solar wind data
+			\item use existing solar wind measurements
 			\item build empirical solar wind model
 			\item extrapolate model to PSP orbit
 		\end{itemize}
 		\vspace{1cm}
-		The major part of this study is published in \citet{Venzmer2018}\\\ 
+		\begin{block}<2->{}
+			\footnotesize
+			The major part of this study is published in \citet{Venzmer2018}\\\ 
+			
+			The article is based on my work performed for the CGAUSS (Coronagraphic German and US SolarProbePlus Survey) project
+		\end{block}
+			
+	\column<3->{0.5\textwidth}
 		
-		The article is based on my work performed for the CGAUSS (Coronagraphic German and US SolarProbePlus Survey) project
-
-	\column<2>{0.5\textwidth}
-		
-		Concept of the model:\\
-		Frequency distributions shifted according to solar activity and solar distance
-		\vspace{5mm}
-		
-		\begin{block}{Solar wind key parameters}
+		\begin{block}{Solar wind environment (key parameters)}
 			\begin{itemize}
 				\item Magnetic field strength
 				\item Velocity
@@ -360,7 +356,13 @@
 				\item Temperature
 			\end{itemize}
 		\end{block}
-		
+		\vspace{5mm}
+		\action<4>{
+		Uniqueness of the model:
+		\begin{itemize}
+			\item Solar wind parameters are represented by frequency distributions instead of average values
+		\end{itemize}
+		}
 	\end{columns}
 \end{frame}
 
@@ -371,13 +373,20 @@
 		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 
-	\column{0.3\textwidth}
+	\column<2>{0.3\textwidth}
 		
 		Perihelion \#1\\
 		2018: solar minimum\\\ 
 		
 		Perihelion \#22\\
-		2024: solar maximum
+		2024: solar maximum\\\ 
+		
+		$\Rightarrow$ Predictions have to be dependent on
+		\begin{itemize}
+			\item solar distance
+			\item solar activity (SSN)
+		\end{itemize}
+
 
 	\end{columns}
 \end{frame}
@@ -395,6 +404,11 @@
 		
 		
 	\end{columns}
+\end{frame}
+\begin{frame}[plain,c]{Solar wind}{}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
+	
 \end{frame}
 \begin{frame}[plain,c]{Solar wind data}{}
 	\begin{columns}[c]
@@ -432,7 +446,7 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}[plain,c]{Frequency distributions}{}
+\begin{frame}[plain,c]{Frequency distributions -- OMNI data}{}
 	\begin{columns}[c]	% [tcb] alignment relative to each column size
 	\column{0.7\textwidth}
 	
@@ -446,37 +460,43 @@
 		\hspace*{-10pt}
 		\includegraphics[width=1.2\textwidth]{../figures_paper/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+		\vspace{2mm}
+		\small Note: Lognormal functions are fully described by their median and mean values
 
 	\end{columns}
 	\vspace*{\fill} \hfill \hyperlink{lognormal_distribution}{\beamerskipbutton{}}
 \end{frame}
-\begin{frame}[plain,c]{Solar activity dependence}{}
+\begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
-		Hourly OMNI data from 1963 to 2016\\\ 
+		Yearly median values:\\\ 
 		\hspace*{-10pt}
 		\includegraphics[width=1.1\textwidth]{../talk_figures/SW_SSN_plot.png}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 
 	\column<2>{0.5\textwidth}
 		
+		Find time lag with highest correlation coefficient:\\\ 
+		
 		\includegraphics[width=\textwidth]{../talk_figures/SW_SSN_correlation_plot.png}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 		
 	\end{columns}
 \end{frame}
-\begin{frame}[plain,c]{Solar activity dependence}{}
+\begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
 	\begin{columns}[c]
 	\column{\textwidth}
 		
 		\centering
+		Linear relations with the shifted SSN:\\\ 
+		
 		\includegraphics[width=0.7\textwidth]{../figures_paper/OMNI_yearly_BVNTvsSSN_a.pdf}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 		
 	\end{columns}
 \end{frame}
-\begin{frame}[plain,c]{Solar activity dependence}{}
+\begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
 	\centering
 	\includegraphics[width=0.9\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
 	\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
@@ -486,6 +506,45 @@
 	\includegraphics[width=0.9\textwidth]{../figures_paper/mixed_fit_fixed_4_paper_f_plot.pdf}
 	\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 \end{frame}
+\begin{frame}[plain,c]{Final model}{}
+	\begin{columns}[c]
+	
+	\column{0.35\textwidth}
+		
+		The actual models combine:
+		\begin{itemize}
+			\item frequency distributions\\
+				$W(x_\text{med},x_\text{avg})$
+			\item median and mean values\\
+				$x_\text{med}(ssn,r),x_\text{avg}(ssn,r)$
+			\item solar activity relations\\
+				$ssn(t+t_\text{lag})$
+			\item solar distance relations\\
+				$r(t)$
+		\end{itemize}
+
+	\column<2>{0.65\textwidth}
+	
+		\begin{block}{Relations for the median and mean values}
+			\scriptsize
+			\begin{align*}
+			&\text{Magnetic field strength}\\
+				B^\text{Parker}_\text{med}(ssn,r) &= \left(\SI{0.0131}{\nT} \cdot ssn + \SI{4.29}{\nT}\right) \cdot \sqrt{\left(r^{-1.858}\right)^2 + \left(r^{-1.32}\right)^2}\\
+				B_\text{avg}(ssn,r) &= 1.0879 \cdot B_\text{med}(ssn,r)\\
+			&\text{Velocity}\\
+				c(ssn) &= -0.00180 \cdot ssn + 0.64\\
+				v_\text{med}^\text{slow}(r) &= \SI{363}{\km\per\s} \cdot r^{0.099}	\,,~   v_\text{med}^\text{fast}(r) = \SI{483}{\km\per\s} \cdot r^{0.099}\\
+				v_\text{avg}^\text{slow}(r) &= 1.0101 \cdot v_\text{med}^\text{slow}(r)	\,,~   v_\text{avg}^\text{fast}(r) = 1.023 \cdot v_\text{med}^\text{fast}(r)\\
+			&\text{Density}\\
+				n_\text{med}(ssn,r) &= \left(\SI{0.0038}{\per\cm\cubed} \cdot ssn + \SI{4.50}{\per\cm\cubed}\right) \cdot r^{-2.11}\\
+				n_\text{avg}(ssn,r) &= 1.305 \cdot n_\text{med}(ssn,r)\\
+			&\text{Temperature}\\
+				T_\text{med}(ssn,r) &= (\SI{197}{\K} \cdot ssn + \SI{5.73e4}{\K}) \cdot r^{-1.10}\\
+				T_\text{avg}(ssn,r) &= 1.654 \cdot T_\text{med}(ssn,r)
+			\end{align*}
+		\end{block}
+	\end{columns}
+\end{frame}
 
 \begin{frame}[plain,c]{Prediction for PSP orbit}{}
 	\begin{columns}[t]	% [tcb] alignment relative to each column size
@@ -494,12 +553,18 @@
 		\hspace*{-22pt}
 		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_top.png}
 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
+		
+		$\Rightarrow$ Extrapolate the model in distance\\
+		$\Rightarrow$ Feed the model with SSN predictions
 
 	\column{0.5\textwidth}
 	
 		\hspace*{-10pt}
 		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_bottom.png}
-% 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
+		\captionoftiny{figure}{~}
+		
+		~\\
+		~
 		
 	\end{columns}
 \end{frame}
@@ -508,7 +573,7 @@
 	\column{\textwidth}
 		
 		\centering
-		Perihelion \#1\\\ 
+		Perihelion \#1 at 36.7\,\Rs{}\\\ 
 		
 		\includegraphics[width=0.7\textwidth]{../talk_figures/SPP_perihelia_prediction_f_defense.pdf}
 		
@@ -533,7 +598,7 @@
 	\column{\textwidth}
 		
 		\centering
-		Perihelion \#22 (first closest)\\\ 
+		Perihelion \#22 at 9.86\,\Rs{}\\\ 
 		
 		\includegraphics[width=0.7\textwidth]{../talk_figures/SPP_perihelia_prediction_nearest_f_defense.pdf}
 		
