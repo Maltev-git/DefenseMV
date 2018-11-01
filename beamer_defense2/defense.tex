@@ -68,24 +68,28 @@
 	\begin{columns}[t]
 	\column{0.5\textwidth}
 		
-		\begin{block}<2->{\color<4->{gray} Geomagnetic impact of the solar wind} \color<4->{gray}
+		\begin{block}{\color<4->{gray} Geomagnetic impact of the solar wind} \color<4->{gray}
+			\action<2->{
 			I derived relations to predict geomagnetic activity from
 			\begin{itemize} \color<4->{gray}
 				\item[\textcolor<4->{gray}{\textbullet}] Solar wind electric field
 				\item[\textcolor<4->{gray}{\textbullet}] Velocity of coronal mass ejections
 				\item[\textcolor<4->{gray}{\textbullet}] Velocity of solar wind streams
 			\end{itemize}
+			}
 		\end{block}
 		
 	\column{0.5\textwidth}
 		
-		\begin{block}<3->{Empirical solar wind model}
+		\begin{block}{Empirical solar wind model}
+			\action<3->{
 			I use existing solar wind data to derive
 			\begin{itemize}
 				\item Solar wind model for the inner heliosphere
 				\item Extrapolation to the near-Sun region
 				\item Prediction for Parker Solar Probe orbit
 			\end{itemize}
+			}
 		\end{block}
 	
 	\end{columns}
@@ -153,13 +157,13 @@
 		
 		\includegraphics[width=0.96\textwidth]{../talk_figures/20130516_170000_1024_HMIIC.jpg}
 		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 16 May 2013}
-		\pause
 		\includegraphics[width=0.96\textwidth]{../talk_figures/20181028_120000_1024_HMIIC.jpg}
 		\captionoftiny{figure}{\centering Credit: \href{https://sdo.gsfc.nasa.gov/data/}{NASA SDO/HMI}, 28 October 2018}
 		
-	\column<3>{0.7\textwidth}
+	\column<2>{0.7\textwidth}
 		
-		11-year sunspot number cycle\\\ 
+		Sunspot number:\\
+		11-year periodicity -- solar cycle\\\ 
 		\includegraphics[width=\textwidth]{../figures_of_others/images/ROB_SILSO_SSN_wolfmms_cropped.png}
 % 		\captionoftiny{figure}{\centering Credit: \href{http://sidc.be/silso/monthlyssnplot}{SILSO data/image, Royal Observatory of Belgium, Brussels}, 2018}
 
@@ -172,7 +176,6 @@
 	\column{0.41\textwidth}
 		
 		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_4096_HMIIC_half.jpg}\\
-		\pause
 		\includegraphics[width=\textwidth]{../talk_figures/20130516_170000_4096_HMIB_half.jpg}\\
 		\pause
 		\includegraphics[width=\textwidth]{../talk_figures/20130516_170048_4096_0171_half.jpg}
@@ -181,10 +184,12 @@
 		
 	\column{0.59\textwidth}
 		
+		\centering
 		\includegraphics[width=0.9\textwidth]{../talk_figures/TSE_2017_500mm_Mackay.png}
 		\captionoftiny{figure}{Credit: \href{http://www.zam.fme.vutbr.cz/~druck/Eclipse/}{Miloslav Druckmüller, Marcel Bělík, Radovan Mrllák, Shadia Habbal}, 2017}
-
+		\vfill\hfill \hyperlink{wavelengths}{\beamerskipbutton{}}
 	\end{columns}
+
 \end{frame}
 
 \begin{frame}[plain,c]{Solar wind}{}
@@ -194,38 +199,34 @@
 		Solar wind
 		\begin{itemize}
 			\item Theoretical model \citep{Parker1958}
-			\begin{itemize}
-				\item Expanding isothermal solar atmosphere
-				\item Parker spiral field geometry
-			\end{itemize}
-			\item<3-> In-situ measurements confirmed its existence in 1959
-			\item<3-> Monitored continuously near Earth since
+			\item In-situ measurements confirmed its existence in 1959
+			\item Spacecraft monitored it continuously near Earth since
 		\end{itemize}
-		
-	\column<2->{0.5\textwidth}
-		
-		\includegraphics[width=\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
-		\captionoftiny{figure}{Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
-		
-	\end{columns}
-\end{frame}
-\begin{frame}[plain,c]{Solar wind}{}
-	\begin{columns}[c]
-	\column{0.5\textwidth}
-		
-		Measured in-situ throughout the heliosphere:
+		\vspace{4mm}
+		\action<2->{Solar wind was measured in-situ throughout the heliosphere:
 		\begin{itemize}
 			\item<.-> Voyager 1 \& 2 -- out to heliopause (\SIrange{1}{120}{\au})
-			\item<2-> Helios 1 \& 2 -- down to Mercury (\SIrange{0.29}{0.98}{\au})
-			\item<3-> Ulysses -- up to high heliolatitudes (\SI{+-79}{\degree})
+			\item<3-> Helios 1 \& 2 -- down to Mercury (\SIrange{0.29}{0.98}{\au})
+			\item<4-> Ulysses -- up to high heliolatitudes (\SI{+-79}{\degree})
 		\end{itemize}
+		}
 		
 	\column{0.5\textwidth}
 		
 % 		\includegraphics<.>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager.pdf}
-		\includegraphics<1>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
-		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
-		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
+		\includegraphics<2>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_v.pdf}
+		\includegraphics<3>[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vh.pdf}
+		\includegraphics<4->[width=\textwidth]{../talk_figures/helios_ulysses_voyager/helios_ulysses_voyager_vhu.pdf}
+		\vspace{2mm}
+		\action<5->{
+			Different types of solar wind:
+			\begin{itemize}
+				\item slow wind streams
+				\item fast wind streams
+				\item coronal mass ejections
+			\end{itemize}
+			\action<6->{$\Rightarrow$ Their share varies with solar activity}
+		}
 
 	\end{columns}
 \end{frame}
@@ -242,37 +243,38 @@
 		
 		The near-Sun region is of special scientific interest:\\
 		\begin{itemize}
-			\item Coronal heating problem
+			\item Coronal heating
 			\item Solar wind acceleration
 		\end{itemize}
-		
+		\vspace{10mm}
+		\action<2->{The Parker Solar Probe mission is to fly within 10\,\Rs{} of the Sun \citep{Fox2015}}
 	\end{columns}
 \end{frame}
 
-\begin{frame}[plain,c]{Parker Solar Probe}{}
-	\begin{columns}[c]
-	\column{\textwidth}
-		
-		Parker Solar Probe mission to fly within 10\,\Rs{} of the Sun\\\ 
-		
-		Primary goals are to investigate \citep{Fox2015}:
-		\begin{itemize}
-			\item the flow of energy that heats and accelerates the solar wind
-			\item the structure and dynamics at the sources of the solar wind
-			\item the mechanisms that accelerate and transport solar energetic particles
-		\end{itemize}
-		\vspace{5mm}
-		\begin{block}<2>{Scientific instruments}
-			\begin{itemize}
-				\item FIELDS -- Electromagnetic Fields Investigation
-				\item IS\sun{}IS -- Integrated Science Investigation of the Sun
-				\item SWEAP -- Solar Wind Electrons Alphas and Protons Investigation
-				\item WISPR -- Wide-Field Imager for Solar Probe
-			\end{itemize}
-		\end{block}
-
-	\end{columns}
-\end{frame}
+% \begin{frame}[plain,c]{Parker Solar Probe}{}
+% 	\begin{columns}[c]
+% 	\column{\textwidth}
+% 		
+% 		Parker Solar Probe mission to fly within 10\,\Rs{} of the Sun\\\ 
+% 		
+% 		Primary goals are to investigate \citep{Fox2015}:
+% 		\begin{itemize}
+% 			\item the flow of energy that heats and accelerates the solar wind
+% 			\item the structure and dynamics at the sources of the solar wind
+% 			\item the mechanisms that accelerate solar energetic particles
+% 		\end{itemize}
+% 		\vspace{5mm}
+% 		\begin{block}<2>{Scientific instruments}
+% 			\begin{itemize}
+% 				\item FIELDS -- Electromagnetic Fields Investigation
+% 				\item IS\sun{}IS -- Integrated Science Investigation of the Sun
+% 				\item SWEAP -- Solar Wind Electrons Alphas and Protons Investigation
+% 				\item WISPR -- Wide-Field Imager for Solar Probe
+% 			\end{itemize}
+% 		\end{block}
+% 
+% 	\end{columns}
+% \end{frame}
 \begin{frame}[plain,c]{Parker Solar Probe}{}
 	\begin{columns}[c]
 	\column{0.4\textwidth}
@@ -286,10 +288,10 @@
 		\vspace{-4mm}
 		\includegraphics[width=0.75\textwidth]{../figures_of_others/images/PSP_MissionDesign2_negative_crop.png}
 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA/Johns Hopkins APL}, 2018}
-		\begin{block}<3>{}
+		\begin{block}{}
 			Launch	\hfill	12 August 2018\\
 			1st Venus flyby	\hfill	3 October\\
-			Sun-closest spacecraft ever	\hfill	29 October\\
+% 			Sun-closest spacecraft ever	\hfill	29 October\\
 			1st perihelion at 36.7\,\Rs{}	\hfill	6 November\\
 			...	\hfill	...\\
 			22nd perihelion at 9.86\,\Rs{}	\hfill	24 December 2024
@@ -330,23 +332,17 @@
 	\begin{columns}[c]
 	\column{0.5\textwidth}
 		
-		The aim of this study is to predict the solar wind environment for the PSP orbit\\\ 
-		
-		Concept of the model:
-		\begin{itemize}
-			\item use existing solar wind measurements
-			\item build empirical solar wind model
-			\item extrapolate model to PSP orbit
-		\end{itemize}
-		\vspace{1cm}
-		\begin{block}<2->{}
-			\footnotesize
-			The major part of this study is published in \citet{Venzmer2018}\\\ 
-			
-			The article is based on my work performed for the CGAUSS (Coronagraphic German and US SolarProbePlus Survey) project
+		The aim of this study is to predict the solar wind environment for the PSP orbit
+		\vspace{10mm}
+		\begin{block}{Concept of the model:}
+			\begin{itemize}
+				\item use existing solar wind measurements
+				\item build empirical solar wind model
+				\item extrapolate model to PSP orbit
+			\end{itemize}
 		\end{block}
 			
-	\column<3->{0.5\textwidth}
+	\column<2->{0.5\textwidth}
 		
 		\begin{block}{Solar wind environment (key parameters)}
 			\begin{itemize}
@@ -356,40 +352,40 @@
 				\item Temperature
 			\end{itemize}
 		\end{block}
-		\vspace{5mm}
-		\action<4>{
+		\vspace{10mm}
 		Uniqueness of the model:
 		\begin{itemize}
 			\item Solar wind parameters are represented by frequency distributions instead of average values
+			\item These are shifted with solar activity and solar distance
 		\end{itemize}
-		}
 	\end{columns}
+	\vspace*{\fill} \hfill \hyperlink{lognormal_distribution}{\beamerskipbutton{}}
 \end{frame}
 
-\begin{frame}[plain,c]{PSP distance and solar activity}{}
-	\begin{columns}[c]
-	\column{0.7\textwidth}
-		
-		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
-		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
-
-	\column<2>{0.3\textwidth}
-		
-		Perihelion \#1\\
-		2018: solar minimum\\\ 
-		
-		Perihelion \#22\\
-		2024: solar maximum\\\ 
-		
-		$\Rightarrow$ Predictions have to be dependent on
-		\begin{itemize}
-			\item solar distance
-			\item solar activity (SSN)
-		\end{itemize}
-
-
-	\end{columns}
-\end{frame}
+% \begin{frame}[plain,c]{PSP distance and solar activity}{}
+% 	\begin{columns}[c]
+% 	\column{0.7\textwidth}
+% 		
+% 		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
+% 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+% 
+% 	\column<2>{0.3\textwidth}
+% 		
+% 		Perihelion \#1\\
+% 		2018: solar minimum\\\ 
+% 		
+% 		Perihelion \#22\\
+% 		2024: solar maximum\\\ 
+% 		
+% 		$\Rightarrow$ Predictive models have to be dependent on
+% 		\begin{itemize}
+% 			\item solar distance
+% 			\item solar activity (SSN)
+% 		\end{itemize}
+% 
+% 
+% 	\end{columns}
+% \end{frame}
 
 \begin{frame}[plain,c]{Solar wind data}{}
 	\begin{columns}[c]
@@ -397,8 +393,9 @@
 		
 		OMNI data set \citep{King2005}\\
 		- intercalibrated multi-spacecraft data\\
-		- time-shifted to the bow shock of the magnetosphere\\
-		- hourly data since 1963\\
+% 		- time-shifted to the bow shock of the magnetosphere\\
+		- low-resolution data since 1963; high-resolution data since 1981\\\ 
+		
 		\centering
 		\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/timeline_OMNI_SC_IDs.pdf}
 		
@@ -407,7 +404,7 @@
 \end{frame}
 \begin{frame}[plain,c]{Solar wind}{}
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
+	\includegraphics[width=0.9\textwidth]{../talk_figures/sw_ace_plot_wo_marks.png}
 	
 \end{frame}
 \begin{frame}[plain,c]{Solar wind data}{}
@@ -416,8 +413,8 @@
 		
 		Helios data set \citep{Rosenbauer1977}\\
 		- Helios 1 and Helios 2 probes\\
-		- solar distance range \SIrange{0.29}{0.98}{\au}\\
-		- hourly data from 1974--1981\\\ 
+		- operated between 1974--1981\\
+		- solar distance range \SIrange{0.29}{0.98}{\au}\\\ 
 		
 		\includegraphics[width=0.8\textwidth]{../talk_figures/Helios12_orbits_ecliptic.png}
 		
@@ -426,10 +423,10 @@
 
 	\column<2->{0.5\textwidth}
 		
-		\hspace*{-30pt}
-		\includegraphics[width=1.2\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc.pdf}
-		\vspace{5mm}
-		\begin{block}<3->{Solar wind model data use}
+% 		\hspace*{-30pt}
+% 		\includegraphics[width=1.2\textwidth]{../talk_figures/timeline_SSN_with_data_and_sc.pdf}
+% 		\vspace{5mm}
+		\begin{block}{Solar wind model data use}
 			\begin{itemize}
 				\item 53 years of hourly near-Earth OMNI data to derive
 				\begin{itemize}
@@ -466,44 +463,46 @@
 	\end{columns}
 	\vspace*{\fill} \hfill \hyperlink{lognormal_distribution}{\beamerskipbutton{}}
 \end{frame}
-\begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
-	\begin{columns}[c]
-	\column{0.5\textwidth}
-		
-		Yearly median values:\\\ 
-		\hspace*{-10pt}
-		\includegraphics[width=1.1\textwidth]{../talk_figures/SW_SSN_plot.png}
-		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
-
-	\column<2>{0.5\textwidth}
-		
-		Find time lag with highest correlation coefficient:\\\ 
-		
-		\includegraphics[width=\textwidth]{../talk_figures/SW_SSN_correlation_plot.png}
-		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
-		
-	\end{columns}
-\end{frame}
+% \begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
+% 	\begin{columns}[c]
+% 	\column{0.5\textwidth}
+% 		
+% 		Yearly median values:\\\ 
+% 		\hspace*{-10pt}
+% 		\includegraphics[width=1.1\textwidth]{../talk_figures/SW_SSN_plot.png}
+% 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+% 
+% 	\column<2>{0.5\textwidth}
+% 		
+% 		Find time lag with highest correlation coefficient:\\\ 
+% 		
+% 		\includegraphics[width=\textwidth]{../talk_figures/SW_SSN_correlation_plot.png}
+% 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+% 		
+% 	\end{columns}
+% \end{frame}
 \begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
 	\begin{columns}[c]
 	\column{\textwidth}
 		
 		\centering
-		Linear relations with the shifted SSN:\\\ 
+		Linear relations with the SSN:\\\ 
 		
 		\includegraphics[width=0.7\textwidth]{../figures_paper/OMNI_yearly_BVNTvsSSN_a.pdf}
 		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
-		
 	\end{columns}
+	\vspace*{\fill} \hfill \hyperlink{time_lag}{\beamerskipbutton{}}
 \end{frame}
-\begin{frame}[plain,c]{Solar activity dependence -- OMNI data}{}
+\begin{frame}[plain,t]{Solar activity dependence -- OMNI data}{}
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
+	\includegraphics<1>[width=0.45\textwidth]{../talk_figures/sw_ssn_bfield.png}
+	\includegraphics<2>[width=0.9\textwidth]{../figures_paper/OMNI_yearly_BVdblNTSSN_fit_e_plot.pdf}
 	\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 \end{frame}
-\begin{frame}[plain,c]{Solar distance dependence -- Helios data}{}
+\begin{frame}[plain,t]{Solar distance dependence -- Helios data}{}
 	\centering
-	\includegraphics[width=0.9\textwidth]{../figures_paper/mixed_fit_fixed_4_paper_f_plot.pdf}
+	\includegraphics<1>[width=0.45\textwidth]{../talk_figures/sw_dist_bfield.png}
+	\includegraphics<2>[width=0.9\textwidth]{../figures_paper/mixed_fit_fixed_4_paper_f_plot.pdf}
 	\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
 \end{frame}
 \begin{frame}[plain,c]{Final model}{}
@@ -514,13 +513,11 @@
 		The actual models combine:
 		\begin{itemize}
 			\item frequency distributions\\
-				$W(x_\text{med},x_\text{avg})$
+				$W(x_\text{med}, x_\text{avg})$
 			\item median and mean values\\
-				$x_\text{med}(ssn,r),x_\text{avg}(ssn,r)$
-			\item solar activity relations\\
-				$ssn(t+t_\text{lag})$
-			\item solar distance relations\\
-				$r(t)$
+				$x_\text{med}(ssn,r), x_\text{avg}(ssn,r)$
+			\item solar activity and distance are time dependent\\
+				$ssn(t+t_\text{lag}), r(t)$
 		\end{itemize}
 
 	\column<2>{0.65\textwidth}
@@ -551,7 +548,7 @@
 	\column{0.5\textwidth}
 	
 		\hspace*{-22pt}
-		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_top.png}
+		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0730_top.png}
 		\captionoftiny{figure}{\centering Credit: \href{http://parkersolarprobe.jhuapl.edu/The-Mission/index.php}{NASA}}
 		
 		$\Rightarrow$ Extrapolate the model in distance\\
@@ -560,7 +557,7 @@
 	\column{0.5\textwidth}
 	
 		\hspace*{-10pt}
-		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0400_bottom.png}
+		\includegraphics[height=0.9\textwidth]{../talk_figures/psp201810_0730_bottom.png}
 		\captionoftiny{figure}{~}
 		
 		~\\
@@ -634,14 +631,14 @@
 	\column<+->{0.65\textwidth}
 
 		\begin{itemize}[<+->]
-			\item Magnetic field values are consistent with theoretical models \citep{Parker1958,Banaszkiewicz1998}
-			\item Remote studies reveal slow wind velocities of \SI{200}{\km\per\s} \citep{Sheeley1997,Wang2000}
-			\item Density values agree well with radio burst observations \citep{Leblanc1998}
-			\item Near-Sun coronal temperatures yield \SIrange{2}{3}{\mega\kelvin} \citep{Billings1959,Liebenberg1975}
+			\item Predicted magnetic field values are consistent with theoretical models \citep{Parker1958,Banaszkiewicz1998}
+			\item Remote observations reveal slow solar wind with velocities of \SI{200}{\km\per\s} at 10\,\Rs{} \citep{Sheeley1997,Wang2000}
+			\item Predicted density values agree well with radio burst observations \citep{Leblanc1998}
+			\item Near-Sun (1--2\,\Rs) coronal temperatures are at \SIrange{2}{3}{\mega\kelvin} \citep{Billings1959,Liebenberg1975}
 		\end{itemize}
 	\end{columns}
 	
-	\vspace{5mm}
+	\vspace{2mm}
 	
 	\begin{columns}[c]
 	\column<+->{\textwidth}
@@ -649,7 +646,7 @@
 		\begin{block}{Extrapolation results \citep{Venzmer2018}}
 			\begin{itemize}
 				\item Remote observations show the limits of the extrapolation
-				\item Velocity and temperature are overestimated
+				\item Predicted velocity and temperature are overestimated
 				\item Solar wind is still being heated and accelerated in this region (up to 20\,\Rs{})
 			\end{itemize}
 		\end{block}
@@ -663,7 +660,8 @@
 \begin{frame}[c]{Summary}{}
 	
 	\begin{itemize}%[<+->]
-		\item I derived an empirical solar wind model for the inner heliosphere. It considers
+		\item I derived an empirical solar wind model for the inner heliosphere.\\
+			It considers:
 		\begin{itemize}
 			\item frequency distributions of the key solar wind parameters
 			\begin{itemize}
@@ -678,6 +676,14 @@
 		\item The model is extrapolated to the near-Sun region
 		\item The solar wind environment is predicted for the orbit of PSP
 	\end{itemize}
+	\vspace{2mm}
+	\begin{block}<2->{}
+		\footnotesize
+		The major part of this study is published in \citet{Venzmer2018}\\\ 
+		
+		The article is based on my work performed for the CGAUSS (Coronagraphic German and US SolarProbePlus Survey) project
+	\end{block}
+
 	
 \end{frame}
 
@@ -689,10 +695,11 @@
 		\begin{itemize}
 			\item Possible modifications to model (e.g., flux conservation)
 			\item Refine model with additional solar wind data from Mercury probes and the upcoming Solar Orbiter mission
-			\item Parker Solar Probe measurements can be used to validate the extrapolations
+			\item The predictions can be used as a reference for the first measurements made by PSP
+			\item The PSP measurements can be used to validate the extrapolations
 		\end{itemize}
 		
-		\vspace{2cm}
+		\vspace{15mm}
 		
 		\action<2>{\centering\LARGE\color{blue} Thank you!}
 		
@@ -746,7 +753,7 @@
 	\centering
 	\includegraphics[width=0.7\textwidth]{../talk_figures/ace_realtime_ap_plot.png}
 \end{frame}
-\begin{frame}[plain,c]{Solar surface and atmosphere}{}
+\begin{frame}[plain,c,label=wavelengths]{Solar surface and atmosphere}{}
 	\begin{columns}[c]
 	\column{0.228\textwidth}
 		
@@ -804,10 +811,16 @@
 \begin{frame}[plain,c]{Solar magnetic field}{}
 	\begin{columns}[c]
 	\column{\textwidth}
+	
+		Theoretical model \citep{Parker1958}
+		\begin{itemize}
+			\item Expanding isothermal solar atmosphere
+			\item Parker spiral field geometry
+		\end{itemize}
 
-	\centering
-	\includegraphics[width=0.7\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
-	\captionoftiny{figure}{\centering Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{../figures_of_others/images/Owens2013_PFSS_Sectors_screenshot.png}
+		\captionoftiny{figure}{\centering Credit: {\citet[Fig.~1]{Owens2013}}, adapted from {\citet[Fig.~1]{Schatten1969}}}
 	
 	\end{columns}
 \end{frame}
@@ -1099,6 +1112,23 @@
 	\vspace*{\fill} \hfill \hyperlink{prediction_performance}{\beamerskipbutton{Prediction performance}}
 \end{frame}
 
+\section{Unrelated plots}
+
+\begin{frame}[plain,c]{Solar wind}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=0.9\textwidth]{../talk_figures/2Dhistogram_VB_5x025_plot.png}\\
+		\includegraphics[width=0.8\textwidth]{../talk_figures/V_vs_B_vs_ap_plot.png}
+
+	\column{0.5\textwidth}
+		
+		\includegraphics[width=0.9\textwidth]{../talk_figures/2Dhistogram_VBzgsm_2-5x025_plot.png}\\
+		\includegraphics[width=0.8\textwidth]{../talk_figures/V_vs_Bz_vs_ap_plot.png}
+		
+	\end{columns}
+\end{frame}
+
 
 \section{Solar wind model for the inner heliosphere}
 
@@ -1126,10 +1156,77 @@
 	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Near-Sun region}{}
-	Unsolved problems:	
+	Unsolved problems:\\
 	- Coronal heating mechanisms\\
 	- Solar wind acceleration processes\\
 	- Solar energetic particle sources
+\end{frame}
+\begin{frame}[plain,c]{Parker Solar Probe}{}
+	\begin{columns}[c]
+	\column{\textwidth}
+		
+		Parker Solar Probe mission to fly within 10\,\Rs{} of the Sun\\\ 
+		
+		Primary goals are to investigate \citep{Fox2015}:
+		\begin{itemize}
+			\item the flow of energy that heats and accelerates the solar wind
+			\item the structure and dynamics at the sources of the solar wind
+			\item the mechanisms that accelerate solar energetic particles
+		\end{itemize}
+		\vspace{5mm}
+		\begin{block}<2>{Scientific instruments}
+			\begin{itemize}
+				\item FIELDS -- Electromagnetic Fields Investigation
+				\item IS\sun{}IS -- Integrated Science Investigation of the Sun
+				\item SWEAP -- Solar Wind Electrons Alphas and Protons Investigation
+				\item WISPR -- Wide-Field Imager for Solar Probe
+			\end{itemize}
+		\end{block}
+
+	\end{columns}
+\end{frame}
+\begin{frame}[plain,c,label=psp_dist_ssn]{PSP distance and solar activity}{}
+	\begin{columns}[c]
+	\column{0.7\textwidth}
+		
+		\includegraphics[width=\textwidth]{../figures_paper/SPP_orbit_predicted_SSN_overview_f_plot.pdf}
+		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+
+	\column<2>{0.3\textwidth}
+		
+		Perihelion \#1\\
+		2018: solar minimum\\\ 
+		
+		Perihelion \#22\\
+		2024: solar maximum\\\ 
+		
+		$\Rightarrow$ Predictive models have to be dependent on
+		\begin{itemize}
+			\item solar distance
+			\item solar activity (SSN)
+		\end{itemize}
+
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}[plain,c,label=time_lag]{Solar activity dependence -- OMNI data}{}
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+		
+		Yearly median values:\\\ 
+		\hspace*{-10pt}
+		\includegraphics[width=1.1\textwidth]{../talk_figures/SW_SSN_plot.png}
+		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+
+	\column<2>{0.5\textwidth}
+		
+		Find time lag with highest correlation coefficient:\\\ 
+		
+		\includegraphics[width=\textwidth]{../talk_figures/SW_SSN_correlation_plot.png}
+		\captionoftiny{figure}{\centering Credit: \citet{Venzmer2018}}
+		
+	\end{columns}
 \end{frame}
 \begin{frame}[plain,c]{Solar activity}{}
 	\begin{columns}[c]
@@ -1146,6 +1243,11 @@
 \begin{frame}[plain,c]{PSP perihelia prediction}{}
 	\centering
 	\includegraphics[width=0.8\textwidth]{../figures_paper/SPP_sw_distributions_b.pdf}
+\end{frame}
+\begin{frame}[plain,c]{Solar wind}{}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figures_of_mine/gnuplots/ACE_64s_v7_thesis_CIRs_2013-5-1_65_plot.pdf}
+	
 \end{frame}
 
 
